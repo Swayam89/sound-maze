@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Sound Maze</title>
+<meta name="description" content="Four mazes, played by ear. New sounds are introduced a few at a time.">
+<meta name="author" content="Parisha Jain">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../img/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&amp;family=Mukta:wght@400;600;800&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&amp;family=Mukta:wght@400;600;800&amp;display=swap"></noscript>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Play Sound Maze">
+<meta property="og:description" content="Four mazes, played by ear. New sounds are introduced a few at a time.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../css/style.css?v=4b7cf257">
+<script type="importmap">{"imports":{"../js/maze.js":"../js/maze.js?v=e5c2ad19","../js/levels.js":"../js/levels.js?v=8637fc78","../js/audio.js":"../js/audio.js?v=1b7dc56c","../js/draw.js":"../js/draw.js?v=19b04712","../js/game.js":"../js/game.js?v=20189c57","../js/site.js":"../js/site.js?v=661138ca"}}</script>
+<script type="module" src="../js/game.js?v=20189c57"></script>
+</head>
+<body class="game">
+<header class="site-header">
+  <a class="site-name" href="../">Back to the project</a>
+  <a class="lang-switch" href="../hi/play/" lang="hi" hreflang="hi">हिन्दी में खेलें</a>
+</header>
+<main id="main">
+  <p class="notice" id="no-keyboard" hidden>This game is played with a keyboard. Open this page on a laptop or desktop computer to play. <a href="../">Read about the project instead</a></p>
+  <p class="notice" id="voice-failed" hidden>The voice didn't load, so instructions will appear as text. The game sounds still work. <button class="button button--small button--line" id="voice-retry" type="button">Try loading the voice again</button></p>
+  <button class="button" id="audio-resume" type="button" hidden>Turn the sound back on</button>
+
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <div>
+      <h1 id="menu-title" tabindex="-1">Sound Maze</h1>
+      <p class="intro">Four mazes, played by ear. New sounds are introduced a few at a time.</p>
+      <p>Headphones help, but speakers work too.</p>
+    </div>
+
+    <section aria-labelledby="levels-heading">
+      <h2 id="levels-heading">Levels</h2>
+      <ol class="levels">
+        <li><button class="level-button" type="button" data-level="0">
+          <span class="n">Level 1</span>
+          <span class="name">Steps and walls</span>
+          <span class="desc">One path with no forks. Learn the step and the wall.</span>
+          <span class="go">Play level 1</span>
+        </button></li>
+        <li><button class="level-button" type="button" data-level="1">
+          <span class="n">Level 2</span>
+          <span class="name">Soft and harsh</span>
+          <span class="desc">Two forks. Listen before you choose.</span>
+          <span class="go">Play level 2</span>
+        </button></li>
+        <li><button class="level-button" type="button" data-level="2">
+          <span class="n">Level 3</span>
+          <span class="name">Remember the way</span>
+          <span class="desc">Hear the route as tones, then follow it from memory.</span>
+          <span class="go">Play level 3</span>
+        </button></li>
+        <li><button class="level-button" type="button" data-level="3">
+          <span class="n">Level 4</span>
+          <span class="name">Parisha's maze</span>
+          <span class="desc">Her hand-drawn maze, 10 by 10. Three forks from memory, then four listens.</span>
+          <span class="go">Play level 4</span>
+        </button></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="controls-heading">
+      <h2 id="controls-heading">Controls</h2>
+      <dl class="controls">
+        <dt>Arrow keys</dt><dd>Move one square</dd>
+        <dt>Shift and an arrow</dt><dd>Listen down a path (levels 2 to 4)</dd>
+        <dt><kbd>R</kbd></dt><dd>Hear the route again, or the last sound</dd>
+        <dt><kbd>H</kbd></dt><dd>Hear the controls</dd>
+        <dt><kbd>Esc</kbd></dt><dd>Pause</dd>
+        <dt><kbd>Enter</kbd></dt><dd>Skip the spoken introduction</dd>
+      </dl>
+      <p class="sr-note">Screen reader users: the maze takes arrow keys while you play. With NVDA, if arrows don't move you, press NVDA and Space to switch to focus mode.</p>
+    </section>
+
+    <section aria-labelledby="sounds-heading">
+      <h2 id="sounds-heading">The sounds</h2>
+      <p>Each sound has one meaning, and it keeps that meaning in every level.</p>
+      <ul class="sound-list">
+  <li><button class="button button--small button--line" type="button" data-sound="step" aria-describedby="sound-step">Play<span class="visually-hidden"> Step</span></button>
+    <span class="name">Step</span>
+    <span class="meaning" id="sound-step">You moved one square.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="wall" aria-describedby="sound-wall">Play<span class="visually-hidden"> Wall</span></button>
+    <span class="name">Wall</span>
+    <span class="meaning" id="sound-wall">There's a wall that way. You didn't move.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="fork" aria-describedby="sound-fork">Play<span class="visually-hidden"> Fork</span></button>
+    <span class="name">Fork</span>
+    <span class="meaning" id="sound-fork">More than one way is open here.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="soft" aria-describedby="sound-soft">Play<span class="visually-hidden"> Soft</span></button>
+    <span class="name">Soft</span>
+    <span class="meaning" id="sound-soft">Listening down this path: it leads out.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="harsh" aria-describedby="sound-harsh">Play<span class="visually-hidden"> Harsh</span></button>
+    <span class="name">Harsh</span>
+    <span class="meaning" id="sound-harsh">Listening down this path: it doesn't lead out.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="exit" aria-describedby="sound-exit">Play<span class="visually-hidden"> Way out</span></button>
+    <span class="name">Way out</span>
+    <span class="meaning" id="sound-exit">You've reached the exit.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="up" aria-describedby="sound-up">Play<span class="visually-hidden"> Up</span></button>
+    <span class="name">Up</span>
+    <span class="meaning" id="sound-up">Route tone: high.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="down" aria-describedby="sound-down">Play<span class="visually-hidden"> Down</span></button>
+    <span class="name">Down</span>
+    <span class="meaning" id="sound-down">Route tone: low.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="left" aria-describedby="sound-left">Play<span class="visually-hidden"> Left</span></button>
+    <span class="name">Left</span>
+    <span class="meaning" id="sound-left">Route tone: two short notes, from the left.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="right" aria-describedby="sound-right">Play<span class="visually-hidden"> Right</span></button>
+    <span class="name">Right</span>
+    <span class="meaning" id="sound-right">Route tone: one long note, from the right.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="empty" aria-describedby="sound-empty">Play<span class="visually-hidden"> No listens</span></button>
+    <span class="name">No listens</span>
+    <span class="meaning" id="sound-empty">You've used all your listens for this level.</span></li>
+</ul>
+      <p><button class="button button--line" id="sound-check" type="button">Check left and right</button></p>
+      <p id="sound-check-says" aria-live="polite"></p>
+    </section>
+  </section>
+
+  <section class="stage" id="stage" hidden aria-labelledby="stage-title">
+    <h1 class="visually-hidden" id="stage-title">Sound Maze</h1>
+    <p class="paper-note">The maze is hidden while you play. You'll see it when you get out.</p>
+    <div class="board" id="board" role="application" tabindex="0" aria-label="">
+      <p class="caption" id="caption" aria-hidden="true"></p>
+    </div>
+    <p class="status"><span id="status-level"></span><span id="status-listens"></span><span id="status-steps"></span><span class="hint" id="status-hint"></span></p>
+  </section>
+
+  <section class="result" id="result" hidden aria-labelledby="result-title">
+    <h1 id="result-title" tabindex="-1"></h1>
+    <div class="result-grid">
+      <div class="reveal-pair">
+        <figure class="reveal">
+          <div id="reveal"></div>
+          <figcaption class="figure-note">The maze you just walked. Green dots mark your steps on the shortest route, and red crosses mark your steps off it.</figcaption>
+        </figure>
+        <figure id="reveal-sketch" hidden>
+          <img src="../img/sketch-maze.png" width="900" height="900" alt="Parisha's hand-drawn maze: a square of thick black lines, with 14 green dots along the way through and 25 red dots in the side passages. The way in is at the bottom left and the way out at the top right.">
+          <figcaption class="figure-note">Parisha's drawing of the same maze, with her red and green dots.</figcaption>
+        </figure>
+      </div>
+      <div class="result-side">
+        <p class="score-line"><span>Score</span> <strong id="score"></strong></p>
+        <p class="best" id="best"></p>
+        <dl class="stats" id="stats"></dl>
+        <p class="score-rule">Out of 100. You lose 1 point for each step beyond the shortest route (40 at most), 4 for each listen and 2 for each route replay. Touching walls costs nothing.</p>
+        <p class="caption caption--result" id="result-caption" aria-hidden="true"></p>
+        <p id="all-done" hidden>That was the last level.</p>
+        <div class="actions">
+          <button class="button" id="next" type="button">Next level</button>
+          <button class="button button--line" id="again" type="button">Play this level again</button>
+          <button class="button button--line" id="result-to-levels" type="button">Back to the level list</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="pause" id="pause" aria-labelledby="pause-heading">
+    <h2 id="pause-heading">Paused</h2>
+    <div class="actions">
+      <button class="button" id="resume" type="button">Resume</button>
+      <button class="button button--line" id="restart" type="button">Restart this level</button>
+      <button class="button button--line" id="skip-level" type="button">Skip to the next level</button>
+      <button class="button button--line" id="pause-to-levels" type="button">Back to the level list</button>
+    </div>
+    <fieldset>
+      <label>Sound volume<input id="volume-sounds" type="range" min="0" max="100" value="80"></label>
+      <label>Voice volume<input id="volume-voice" type="range" min="0" max="100" value="90"></label>
+      <label class="check"><input id="mono" type="checkbox"> Mono: same sound in both ears</label>
+    </fieldset>
+  </dialog>
+
+  <div id="live" class="visually-hidden" aria-live="polite"></div>
+</main>
+<script type="application/json" id="strings">{"ui":{"page_title":"Play Sound Maze","back":"Back to the project","lang_switch":"हिन्दी में खेलें","intro":"Four mazes, played by ear. New sounds are introduced a few at a time.","headphones":"Headphones help, but speakers work too.","keyboard_only":"This game is played with a keyboard. Open this page on a laptop or desktop computer to play.","keyboard_only_link":"Read about the project instead","controls_heading":"Controls","key_move":"Arrow keys","key_move_desc":"Move one square","key_listen":"Shift and an arrow","key_listen_desc":"Listen down a path (levels 2 to 4)","key_repeat":"R","key_repeat_desc":"Hear the route again, or the last sound","key_help":"H","key_help_desc":"Hear the controls","key_pause":"Esc","key_pause_desc":"Pause","key_skip":"Enter","key_skip_desc":"Skip the spoken introduction","screen_reader_note":"Screen reader users: the maze takes arrow keys while you play. With NVDA, if arrows don't move you, press NVDA and Space to switch to focus mode.","levels_heading":"Levels","level_1_name":"Steps and walls","level_1_desc":"One path with no forks. Learn the step and the wall.","level_2_name":"Soft and harsh","level_2_desc":"Two forks. Listen before you choose.","level_3_name":"Remember the way","level_3_desc":"Hear the route as tones, then follow it from memory.","level_4_name":"Parisha's maze","level_4_desc":"Her hand-drawn maze, 10 by 10. Three forks from memory, then four listens.","level_play":"Play level {n}","sounds_heading":"The sounds","sounds_intro":"Each sound has one meaning, and it keeps that meaning in every level.","sound_play":"Play","sound_step_name":"Step","sound_step_meaning":"You moved one square.","sound_wall_name":"Wall","sound_wall_meaning":"There's a wall that way. You didn't move.","sound_fork_name":"Fork","sound_fork_meaning":"More than one way is open here.","sound_soft_name":"Soft","sound_soft_meaning":"Listening down this path: it leads out.","sound_harsh_name":"Harsh","sound_harsh_meaning":"Listening down this path: it doesn't lead out.","sound_exit_name":"Way out","sound_exit_meaning":"You've reached the exit.","sound_up_name":"Up","sound_up_meaning":"Route tone: high.","sound_down_name":"Down","sound_down_meaning":"Route tone: low.","sound_left_name":"Left","sound_left_meaning":"Route tone: two short notes, from the left.","sound_right_name":"Right","sound_right_meaning":"Route tone: one long note, from the right.","sound_empty_name":"No listens","sound_empty_meaning":"You've used all your listens for this level.","sound_check":"Check left and right","sound_check_left":"This step should come from your left.","sound_check_right":"This step should come from your right.","status_level":"Level {n}","status_listens":"Listens left: {n}","status_steps":"Steps: {n}","status_hint":"H for help. Esc to pause.","status_skip":"Enter skips the introduction.","paper_note":"The maze is hidden while you play. You'll see it when you get out.","pause_heading":"Paused","resume":"Resume","restart":"Restart this level","skip_level":"Skip to the next level","to_levels":"Back to the level list","volume_sounds":"Sound volume","volume_voice":"Voice volume","mono":"Mono: same sound in both ears","result_heading":"You're out of level {n}","stat_steps":"Steps taken","stat_shortest":"Shortest route","stat_listens":"Listens used","stat_replays":"Route replays","stat_walls":"Walls touched","stat_time":"Time","score_label":"Score","score_rule":"Out of 100. You lose 1 point for each step beyond the shortest route (40 at most), 4 for each listen and 2 for each route replay. Touching walls costs nothing.","reveal_caption":"The maze you just walked. Green dots mark your steps on the shortest route, and red crosses mark your steps off it.","reveal_sketch_caption":"Parisha's drawing of the same maze, with her red and green dots.","next_level":"Next level","play_again":"Play this level again","all_done":"That was the last level.","load_error":"The voice didn't load, so instructions will appear as text. The game sounds still work.","retry":"Try loading the voice again","audio_blocked":"Turn the sound back on","minutes_seconds":"{m} min {s} s","seconds":"{s} s","best_on_device":"Your best on this device: {n}","decision_from":"From the research","decision_to":"In the demo","description_label":"Read a description of the drawing","access_heading":"Who can play it","access_note":"The demo is played by ear, so it needs hearing in at least one ear. If you hear with one ear only, turn on Mono in the pause menu. Everything the narrator says also appears on screen. The demo needs a keyboard, so it doesn't work on phones yet. It hasn't been tested with blind or visually impaired players.","sketch_maze_alt":"Parisha's hand-drawn maze: a square of thick black lines, with 14 green dots along the way through and 25 red dots in the side passages. The way in is at the bottom left and the way out at the top right.","typefaces":"Set in Atkinson Hyperlegible Next, designed by the Braille Institute for readers with low vision, and Mukta by Ek Type for the Hindi."},"voice":{"welcome":"Sound Maze. You find your way through each maze by sound. Headphones help, but speakers work too.","l1_title":"Level one. Steps and walls.","teach_step":"Each step sounds like this.","teach_wall":"Walk into a wall and you hear this.","teach_exit":"And this means you've found the way out.","l1_go":"Use the arrow keys. You always start at the bottom left, and the way out is always at the top right.","l2_title":"Level two. Soft and harsh.","teach_fork":"This sound means you're at a fork, where more than one way is open.","teach_listen":"To listen down a path before you take it, hold Shift and press an arrow.","teach_soft":"Soft and smooth. That way leads out.","teach_harsh":"Harsh and buzzing. That way doesn't lead out.","l2_go":"You can listen four times in this level. Keep them for the forks.","l3_title":"Level three. Remember the way.","teach_dirs":"Each direction has its own tone.","dir_up":"Up: a high note.","dir_down":"Down: a low note.","dir_left":"Left: two short notes.","dir_right":"Right: one long note.","teach_route":"Before you start, you'll hear which way to go at each fork, in order. Press R to hear it again.","l4_title":"Level four. Parisha's maze.","l4_intro":"Parisha Jain drew this maze by hand. It's ten squares across and ten down. You'll hear the first three forks. After that, you have four listens.","route_here":"Here is the way to go.","go":"Go.","no_listens":"You can't listen any more in this level.","help":"Arrow keys move. Shift and an arrow listens down a path. R repeats. Escape pauses.","paused":"Paused.","out":"Oh, you found the way out!","score":"Score:","next":"Press Enter for the next level.","all_done":"That was the last level. Press Enter to go back to the start.","wall_1":"Oh, you've hit a wall.","wall_2":"That's a wall.","wall_3":"Wall there."}}</script>
+</body>
+</html>

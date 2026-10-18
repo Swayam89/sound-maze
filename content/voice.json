@@ -1,0 +1,134 @@
+{
+  "welcome": {
+    "en": "Sound Maze. You find your way through each maze by sound. Headphones help, but speakers work too.",
+    "hi": "साउंड मेज़। हर भूलभुलैया में आपको आवाज़ के सहारे रास्ता ढूँढना है। हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं।"
+  },
+  "l1_title": {
+    "en": "Level one. Steps and walls.",
+    "hi": "पहला लेवल। कदम और दीवारें।"
+  },
+  "teach_step": {
+    "en": "Each step sounds like this.",
+    "hi": "हर कदम पर ऐसी आवाज़ आती है।"
+  },
+  "teach_wall": {
+    "en": "Walk into a wall and you hear this.",
+    "hi": "दीवार से टकराने पर यह आवाज़ आती है।"
+  },
+  "teach_exit": {
+    "en": "And this means you've found the way out.",
+    "hi": "और इसका मतलब है कि आपको बाहर का रास्ता मिल गया।"
+  },
+  "l1_go": {
+    "en": "Use the arrow keys. You always start at the bottom left, and the way out is always at the top right.",
+    "hi": "ऐरो कीज़ से चलिए। आप हमेशा नीचे बाईं ओर से शुरू करते हैं, और बाहर का रास्ता हमेशा ऊपर दाईं ओर होता है।"
+  },
+  "l2_title": {
+    "en": "Level two. Soft and harsh.",
+    "hi": "दूसरा लेवल। नरम और कर्कश।"
+  },
+  "teach_fork": {
+    "en": "This sound means you're at a fork, where more than one way is open.",
+    "hi": "इस आवाज़ का मतलब है कि आप दोराहे पर हैं, जहाँ से एक से ज़्यादा रास्ते खुले हैं।"
+  },
+  "teach_listen": {
+    "en": "To listen down a path before you take it, hold Shift and press an arrow.",
+    "hi": "किसी रास्ते पर जाने से पहले उसकी आवाज़ सुनने के लिए Shift दबाकर रखिए और उस तरफ़ का ऐरो दबाइए।"
+  },
+  "teach_soft": {
+    "en": "Soft and smooth. That way leads out.",
+    "hi": "नरम और मुलायम आवाज़। यह रास्ता बाहर ले जाता है।"
+  },
+  "teach_harsh": {
+    "en": "Harsh and buzzing. That way doesn't lead out.",
+    "hi": "कर्कश आवाज़। यह रास्ता बाहर नहीं ले जाता।"
+  },
+  "l2_go": {
+    "en": "You can listen four times in this level. Keep them for the forks.",
+    "hi": "आप चार बार सुन सकते हैं। ये मौके दोराहों के लिए बचाकर रखिए।"
+  },
+  "l3_title": {
+    "en": "Level three. Remember the way.",
+    "hi": "तीसरा लेवल। रास्ता याद रखिए।"
+  },
+  "teach_dirs": {
+    "en": "Each direction has its own tone.",
+    "hi": "हर दिशा की अपनी धुन है।"
+  },
+  "dir_up": {
+    "en": "Up: a high note.",
+    "hi": "ऊपर: ऊँचा सुर।"
+  },
+  "dir_down": {
+    "en": "Down: a low note.",
+    "hi": "नीचे: नीचा सुर।"
+  },
+  "dir_left": {
+    "en": "Left: two short notes.",
+    "hi": "बाएँ: दो छोटे सुर।"
+  },
+  "dir_right": {
+    "en": "Right: one long note.",
+    "hi": "दाएँ: एक लंबा सुर।"
+  },
+  "teach_route": {
+    "en": "Before you start, you'll hear which way to go at each fork, in order. Press R to hear it again.",
+    "hi": "शुरू करने से पहले आप क्रम से सुनेंगे कि हर दोराहे पर किस तरफ़ जाना है। दोबारा सुनने के लिए R दबाइए।"
+  },
+  "l4_title": {
+    "en": "Level four. Parisha's maze.",
+    "hi": "चौथा लेवल। परिशा की भूलभुलैया।"
+  },
+  "l4_intro": {
+    "en": "Parisha Jain drew this maze by hand. It's ten squares across and ten down. You'll hear the first three forks. After that, you have four listens.",
+    "hi": "यह भूलभुलैया परिशा जैन ने हाथ से बनाई है। यह दस खाने चौड़ी और दस खाने लंबी है। आप पहले तीन दोराहों का रास्ता सुनेंगे। उसके बाद आप चार बार सुन सकते हैं।"
+  },
+  "route_here": {
+    "en": "Here is the way to go.",
+    "hi": "यह रहा रास्ता।"
+  },
+  "go": {
+    "en": "Go.",
+    "hi": "चलिए।"
+  },
+  "no_listens": {
+    "en": "You can't listen any more in this level.",
+    "hi": "सुनने के मौके ख़त्म हो गए।"
+  },
+  "help": {
+    "en": "Arrow keys move. Shift and an arrow listens down a path. R repeats. Escape pauses.",
+    "hi": "ऐरो कीज़ से चलिए। Shift के साथ कोई ऐरो दबाने पर उस तरफ़ के रास्ते की आवाज़ सुनाई देती है। R से दोहराइए। Escape से खेल रोकिए।"
+  },
+  "paused": {
+    "en": "Paused.",
+    "hi": "खेल रुका है।"
+  },
+  "out": {
+    "en": "Oh, you found the way out!",
+    "hi": "अरे, आपको बाहर का रास्ता मिल गया!"
+  },
+  "score": {
+    "en": "Score:",
+    "hi": "स्कोर:"
+  },
+  "next": {
+    "en": "Press Enter for the next level.",
+    "hi": "अगले लेवल के लिए Enter दबाइए।"
+  },
+  "all_done": {
+    "en": "That was the last level. Press Enter to go back to the start.",
+    "hi": "यह आख़िरी लेवल था। शुरुआत पर लौटने के लिए Enter दबाइए।"
+  },
+  "wall_1": {
+    "en": "Oh, you've hit a wall.",
+    "hi": "अरे, आप दीवार से टकरा गए।"
+  },
+  "wall_2": {
+    "en": "That's a wall.",
+    "hi": "यह दीवार है।"
+  },
+  "wall_3": {
+    "en": "Wall there.",
+    "hi": "उधर दीवार है।"
+  }
+}

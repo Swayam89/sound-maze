@@ -1,0 +1,34 @@
+{
+  "best_on_device": {
+    "en": "Your best on this device: {n}",
+    "hi": "इस डिवाइस पर आपका सबसे अच्छा स्कोर: {n}"
+  },
+  "decision_from": {
+    "en": "From the research",
+    "hi": "शोध से"
+  },
+  "decision_to": {
+    "en": "In the demo",
+    "hi": "डेमो में"
+  },
+  "description_label": {
+    "en": "Read a description of the drawing",
+    "hi": "चित्र का विवरण पढ़िए"
+  },
+  "access_heading": {
+    "en": "Who can play it",
+    "hi": "इसे कौन खेल सकता है"
+  },
+  "access_note": {
+    "en": "The demo is played by ear, so it needs hearing in at least one ear. If you hear with one ear only, turn on Mono in the pause menu. Everything the narrator says also appears on screen. The demo needs a keyboard, so it doesn't work on phones yet. It hasn't been tested with blind or visually impaired players.",
+    "hi": "यह डेमो सुनकर खेला जाता है, इसलिए कम से कम एक कान से सुन पाना ज़रूरी है। अगर आप एक ही कान से सुनते हैं, तो खेल रोककर मोनो चालू कीजिए। जो कुछ भी बोलकर बताया जाता है, वह स्क्रीन पर भी लिखा दिखता है। यह डेमो कीबोर्ड से खेला जाता है, इसलिए अभी फ़ोन पर नहीं चलता। अभी तक इसे दृष्टिहीन या दृष्टिबाधित खिलाड़ियों के साथ परखा नहीं गया है।"
+  },
+  "sketch_maze_alt": {
+    "en": "Parisha's hand-drawn maze: a square of thick black lines, with 14 green dots along the way through and 25 red dots in the side passages. The way in is at the bottom left and the way out at the top right.",
+    "hi": "परिशा की हाथ से बनाई भूलभुलैया: मोटी काली रेखाओं का एक चौकोर, जिसमें बाहर जाने वाले रास्ते पर 14 हरे बिंदु हैं और बगल के रास्तों में 25 लाल बिंदु। अंदर आने का रास्ता नीचे बाईं ओर है और बाहर का रास्ता ऊपर दाईं ओर।"
+  },
+  "typefaces": {
+    "en": "Set in Atkinson Hyperlegible Next, designed by the Braille Institute for readers with low vision, and Mukta by Ek Type for the Hindi.",
+    "hi": "अंग्रेज़ी के लिए Atkinson Hyperlegible Next फ़ॉन्ट, जिसे Braille Institute ने कम दृष्टि वाले पाठकों के लिए बनाया है, और हिंदी के लिए Ek Type का Mukta फ़ॉन्ट।"
+  }
+}

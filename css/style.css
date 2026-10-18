@@ -1,0 +1,973 @@
+/* Sound Maze. Colours are sampled from Parisha's sketch: grey paper, marker
+   ink, and her red and green dots. Red and green only ever mark meaning, and
+   always come with a shape or a word. */
+
+:root {
+  --paper: #e6e6e6;
+  --paper-deep: #dadada;
+  --ink: #0e0c0c;
+  --ink-soft: #464242;
+  --red: #ed0a2f; /* marks only (3.6:1 on paper); never used for text */
+  --green: #1c7727;
+  --stroke: 0.4rem; /* the weight of her marker line */
+  --measure: 38rem;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: clamp(5rem, 10vw, 8rem);
+  --step--1: 0.875rem;
+  --step-0: 1.125rem;
+  --step-1: 1.4rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2rem, 4vw, 2.75rem);
+  --step-4: clamp(2.6rem, 6vw, 4.25rem);
+  --step-5: clamp(3.4rem, 11vw, 8.5rem);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #151414;
+    --paper-deep: #201f1f;
+    --ink: #e6e6e6;
+    --ink-soft: #b9b4b4;
+    --red: #ff5a6c;
+    --green: #5cc46a;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: break-word;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Atkinson Hyperlegible Next', 'Mukta', system-ui, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.55;
+}
+
+:lang(hi) body,
+body:lang(hi) {
+  line-height: 1.75;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+:lang(hi) :is(h1, h2, h3) {
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote {
+  margin: 0;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 4px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -4rem;
+  padding: var(--space-1) var(--space-2);
+  background: var(--ink);
+  color: var(--paper);
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: var(--space-1);
+}
+
+/* ---------- Buttons ---------- */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  min-height: 3rem;
+  padding: 0.6rem 1.25rem;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  background: var(--ink);
+  color: var(--paper);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--ink-soft);
+  border-color: var(--ink-soft);
+}
+
+.button--line {
+  background: transparent;
+  color: var(--ink);
+}
+
+.button--line:hover {
+  background: var(--paper-deep);
+  border-color: var(--ink);
+}
+
+.button--small {
+  min-height: 2.5rem;
+  padding: 0.35rem 0.9rem;
+  font-size: var(--step--1);
+}
+
+/* A wall with one opening: the divider between big sections, drawn in the
+   weight of her marker. --gap sets where the opening sits. */
+.wall {
+  --gap: 70%;
+  display: flex;
+  gap: 3.5rem;
+  height: var(--stroke);
+  margin: 0;
+  border: 0;
+}
+
+.wall::before,
+.wall::after {
+  content: '';
+  height: 100%;
+  border-radius: var(--stroke);
+  background: var(--ink);
+}
+
+.wall::before {
+  flex: 0 0 var(--gap);
+}
+
+.wall::after {
+  flex: 1;
+}
+
+/* ---------- Maze drawings ---------- */
+
+.maze {
+  color: var(--ink);
+}
+
+.maze-walls line {
+  stroke: currentColor;
+  stroke-linecap: round;
+}
+
+.mark-on {
+  fill: var(--green);
+}
+
+.mark-off line {
+  stroke: var(--red);
+  stroke-linecap: round;
+}
+
+.is-drawing .maze-walls line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 0.5s ease-out forwards;
+  animation-delay: calc(var(--i, 0) * 25ms);
+}
+
+.is-drawing .maze-marks > * {
+  opacity: 0;
+  animation: appear 0.2s ease-out forwards;
+  animation-delay: calc(0.9s + var(--i, 0) * 60ms);
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .is-drawing .maze-walls line,
+  .is-drawing .maze-marks > * {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/* ---------- Site header and footer ---------- */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-2) var(--gutter);
+}
+
+.site-name {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current] {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.lang-switch {
+  font-weight: 700;
+}
+
+.site-footer {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5) var(--gutter) var(--space-4);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.site-footer .made-by {
+  color: var(--ink);
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+/* ---------- Showcase page ---------- */
+
+.page {
+  padding: 0 var(--gutter);
+}
+
+.section {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5) 0;
+}
+
+.section > * {
+  min-width: 0;
+}
+
+.section > h2 {
+  font-size: var(--step-3);
+  max-width: 24ch;
+}
+
+.prose {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+  max-width: var(--measure);
+}
+
+.hero {
+  display: grid;
+  gap: var(--space-4);
+  align-items: end;
+  padding: var(--space-4) 0 var(--space-5);
+}
+
+.hero h1 {
+  font-size: var(--step-5);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+
+.hero .lede {
+  margin-top: var(--space-3);
+  font-size: var(--step-1);
+  max-width: 28ch;
+}
+
+.hero .byline {
+  margin-top: var(--space-2);
+  color: var(--ink-soft);
+}
+
+.hero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.hero .play-note {
+  flex-basis: 100%;
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.sketch figcaption,
+.figure-note {
+  margin-top: var(--space-1);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+@media (min-width: 60rem) {
+  .hero {
+    grid-template-columns: 5fr 6fr;
+  }
+
+  .hero .sketch {
+    margin-right: calc(var(--gutter) * -1);
+  }
+}
+
+.question-text {
+  max-width: 24ch;
+  font-size: clamp(2.1rem, 4.6vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+:lang(hi) .question-text {
+  line-height: 1.4;
+}
+
+.columns {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 52rem) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+    max-width: 72rem;
+  }
+}
+
+.plain-list {
+  display: grid;
+  gap: var(--space-1);
+  padding-left: 1.2em;
+}
+
+.plain-list li::marker {
+  color: var(--ink-soft);
+}
+
+.subheading {
+  font-size: var(--step-1);
+}
+
+.people {
+  display: grid;
+  gap: var(--space-3) var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 44rem) {
+  .people {
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  }
+}
+
+.person {
+  display: grid;
+  gap: var(--space-1);
+  align-content: start;
+  padding-top: var(--space-2);
+  border-top: 2px solid var(--ink);
+}
+
+.person h3 {
+  font-size: var(--step-1);
+}
+
+.person .age {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.interview {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+  border-top: 2px solid var(--ink);
+}
+
+.interview:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.interview h3 {
+  max-width: 30ch;
+  font-size: var(--step-2);
+}
+
+.answers {
+  display: grid;
+  gap: var(--space-3) var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 52rem) {
+  .answers {
+    grid-template-columns: repeat(2, minmax(0, var(--measure)));
+  }
+}
+
+.answers blockquote p::before {
+  content: open-quote;
+}
+
+.answers blockquote p::after {
+  content: close-quote;
+}
+
+.answers .who {
+  margin-top: 0.3rem;
+  font-weight: 700;
+  font-size: var(--step--1);
+}
+
+.equations {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 0.2rem 0.9rem;
+  align-items: baseline;
+  font-size: var(--step-2);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.equations dt,
+.equations dd {
+  margin: 0;
+}
+
+.equations .equals {
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+@media (max-width: 30rem) {
+  .equations {
+    gap: 0.2rem 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+.form-statement {
+  max-width: 26ch;
+  font-size: var(--step-3);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.decisions {
+  display: grid;
+  gap: 0;
+  max-width: 64rem;
+  padding: 0;
+  list-style: none;
+}
+
+.decisions li {
+  display: grid;
+  gap: var(--space-1) var(--space-4);
+  padding: var(--space-2) 0;
+  border-top: 2px solid var(--ink);
+}
+
+.decisions .label {
+  display: block;
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+@media (min-width: 48rem) {
+  .decisions li {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sound-list {
+  display: grid;
+  gap: 0;
+  max-width: 48rem;
+  padding: 0;
+  list-style: none;
+}
+
+.sound-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.1rem var(--space-2);
+  align-items: center;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--ink-soft);
+}
+
+.sound-list .button {
+  grid-row: span 2;
+  min-width: 5.5rem;
+  justify-content: center;
+}
+
+.sound-list .name {
+  font-weight: 700;
+}
+
+.sound-list .meaning {
+  color: var(--ink-soft);
+}
+
+.her-key {
+  max-width: 22rem;
+}
+
+.maze-pair {
+  display: grid;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+@media (min-width: 56rem) {
+  .maze-pair {
+    grid-template-columns: 1.15fr 1fr;
+  }
+}
+
+.maze-pair .maze {
+  max-width: 34rem;
+}
+
+details {
+  max-width: var(--measure);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details[open] summary {
+  margin-bottom: var(--space-1);
+}
+
+.sources {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 48rem;
+  padding-left: 1.4em;
+}
+
+.sources .finding {
+  display: block;
+  color: var(--ink-soft);
+}
+
+.play-section {
+  padding-bottom: var(--space-6);
+}
+
+/* ---------- Game page ---------- */
+
+.game {
+  display: grid;
+  min-height: 100svh;
+  grid-template-rows: auto 1fr;
+}
+
+.game main {
+  padding: 0 var(--gutter) var(--space-5);
+}
+
+.game .notice {
+  max-width: var(--measure);
+  margin: var(--space-2) 0;
+  padding: var(--space-2);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+}
+
+.menu {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 64rem;
+}
+
+.menu h1 {
+  font-size: var(--step-4);
+}
+
+.menu .intro {
+  margin-top: var(--space-2);
+  font-size: var(--step-1);
+  max-width: 30ch;
+}
+
+.menu h2 {
+  font-size: var(--step-2);
+  margin-bottom: var(--space-2);
+}
+
+.levels {
+  display: grid;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 48rem) {
+  .levels {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.level-button {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+  height: 100%;
+  padding: var(--space-2);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.level-button:hover {
+  background: var(--paper-deep);
+}
+
+.level-button .n {
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.level-button .name {
+  font-size: var(--step-1);
+  font-weight: 800;
+}
+
+.level-button .desc {
+  color: var(--ink-soft);
+}
+
+.level-button .go {
+  margin-top: var(--space-1);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem var(--space-3);
+  max-width: 40rem;
+}
+
+.controls dt,
+.controls dd {
+  margin: 0;
+}
+
+kbd {
+  display: inline-block;
+  min-width: 1.8em;
+  padding: 0 0.4em;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.sr-note {
+  max-width: var(--measure);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.stage {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: calc(100svh - 6rem);
+}
+
+.paper-note {
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.board {
+  display: grid;
+  place-items: center;
+  margin: var(--space-2) 0;
+  border-radius: 4px;
+}
+
+.board:focus-visible {
+  outline-offset: 0;
+}
+
+.caption {
+  max-width: 26ch;
+  font-size: var(--step-3);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: balance;
+}
+
+:lang(hi) .caption {
+  line-height: 1.5;
+}
+
+.status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 2px solid var(--ink);
+  font-size: var(--step--1);
+}
+
+.status .hint {
+  margin-left: auto;
+  color: var(--ink-soft);
+}
+
+.result {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 80rem;
+  padding-top: var(--space-2);
+}
+
+.result h1 {
+  font-size: var(--step-4);
+}
+
+.result-grid {
+  display: grid;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.result-side {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.reveal-pair {
+  display: grid;
+  gap: var(--space-3);
+  align-items: start;
+}
+
+.reveal .maze {
+  width: min(100%, 34rem);
+}
+
+@media (min-width: 60rem) {
+  .result-grid {
+    grid-template-columns: minmax(0, 1fr) 22rem;
+  }
+
+  .reveal-pair:has(#reveal-sketch:not([hidden])) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+}
+
+.stats div {
+  display: grid;
+}
+
+.stats dt {
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.stats dd {
+  margin: 0;
+  font-size: var(--step-2);
+  font-weight: 800;
+}
+
+.score-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.score-line strong {
+  font-size: var(--step-5);
+  line-height: 1;
+}
+
+.best {
+  margin-top: calc(var(--space-2) * -1);
+  font-weight: 700;
+}
+
+.score-rule {
+  max-width: var(--measure);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.result .actions,
+.pause .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+dialog.pause {
+  width: min(32rem, calc(100vw - 2 * var(--gutter)));
+  padding: var(--space-4);
+  border: var(--stroke) solid var(--ink);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+dialog.pause::backdrop {
+  background: rgb(14 12 12 / 0.55);
+}
+
+.pause h2 {
+  font-size: var(--step-3);
+  margin-bottom: var(--space-3);
+}
+
+.pause .actions {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.pause fieldset {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.pause label {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.pause .check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.pause input[type='range'] {
+  accent-color: var(--ink);
+}
+
+.pause input[type='checkbox'] {
+  width: 1.3rem;
+  height: 1.3rem;
+  accent-color: var(--ink);
+}

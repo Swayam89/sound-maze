@@ -1,0 +1,770 @@
+{
+  "en": {
+    "meta": {
+      "title": "Sound Maze by Parisha Jain",
+      "description": "Sound Maze is a maze game played by sound and touch, designed by Parisha Jain. Read her research and play the four-level browser demo."
+    },
+    "skip_link": "Skip to content",
+    "lang_switch": "हिन्दी",
+    "nav_label": "Sections",
+    "nav": {
+      "idea": "Idea",
+      "research": "Research",
+      "sounds": "Sounds",
+      "maze": "Maze",
+      "play": "Play"
+    },
+    "hero": {
+      "title": "Sound Maze",
+      "lede": "A maze game you solve by sound and touch. Parisha's design pairs a tactile maze and a game piece with a sound language. The demo on this site is the sound part, played in a browser.",
+      "byline": "A design project by Parisha Jain",
+      "play": "Play the maze",
+      "play_note": "Played with a keyboard. Headphones help, but speakers work too.",
+      "hear": "Hear the sounds"
+    },
+    "concept": {
+      "heading": "The idea",
+      "paragraphs": [
+        "Sound Maze is a multisensory navigation game that challenges players to understand and navigate a physical space without relying on vision. The game explores how sound, touch and spatial memory can work together to create an understanding of space.",
+        "The player moves a physical game piece through a tactile maze or grid. Information about the route comes through sound mapping: different sounds give different spatial instructions, such as direction, movement, obstacles, distance and destination. The player has to listen, interpret, remember and navigate the maze by touch.",
+        "The game introduces players to its own sound language gradually. A high-pitched tone might indicate one direction, a low tone another, while combinations, rhythms or changes in pitch can communicate turns, obstacles or movement. As the levels progress, players have to remember increasingly complex sound sequences and translate them into physical movement.",
+        "Touch gives the space a physical form. In the tactile maze, players feel pathways, boundaries, textures and obstacles. Advanced versions of the game could also use vibration, temperature, airflow or scent.",
+        "Reaching the end of the maze is the player's goal. The project's goal is to explore how people build mental maps when visual information is removed."
+      ]
+    },
+    "question": {
+      "heading": "The research question",
+      "text": "How can sound mapping and tactile feedback be used to communicate space, direction and navigation through a multisensory game?",
+      "objectives_heading": "Objectives",
+      "objectives": [
+        "Explore sound as a tool for communicating spatial information.",
+        "Understand how people interpret and remember auditory cues.",
+        "Develop a tactile system that complements sound-based navigation.",
+        "Create an engaging game rather than a purely functional accessibility tool.",
+        "Explore how removing vision changes spatial awareness, memory and decision-making.",
+        "Design a game that both visually impaired and sighted players can play."
+      ],
+      "audience_heading": "Target audience",
+      "audience": [
+        "Aged 18 to 35.",
+        "Visually impaired people who are old enough to understand and independently play a physical game."
+      ]
+    },
+    "people": {
+      "heading": "Seven participants",
+      "intro": "Parisha interviewed seven people aged 18 to 30, all blind or visually impaired.",
+      "profiles": [
+        {
+          "name": "Mysha",
+          "age": "18 years old",
+          "text": "She has a rare genetic condition that stops the body from making enough melanin, the natural chemical that gives colour to the skin, hair and eyes. She has 45% vision."
+        },
+        {
+          "name": "Shruti",
+          "age": "20 years old",
+          "text": "She has low vision and can perceive light, shapes and large objects, but struggles with small details and with navigating unfamiliar environments. She relies on a combination of touch, environmental sounds and memory when moving through new spaces. She enjoys interactive activities and is comfortable learning new systems."
+        },
+        {
+          "name": "Rohan",
+          "age": "23 years old",
+          "text": "He has severe visual impairment and primarily relies on auditory and tactile information. He uses a cane for navigation and is particularly aware of environmental sounds such as traffic, footsteps, voices and echoes. He has experience with audio-based games and enjoys activities that involve problem-solving."
+        },
+        {
+          "name": "Vedant",
+          "age": "21 years old",
+          "text": "He has limited functional vision and relies heavily on touch and sound in unfamiliar environments. He tends to remember spaces as a sequence of movements rather than as a visual map. He is interested in technology and games, and would be suitable for testing how easily a new sound language can be learned."
+        },
+        {
+          "name": "Arjun",
+          "age": "24 years old",
+          "text": "He is blind and navigates familiar and unfamiliar spaces independently, using a cane, auditory cues and tactile landmarks. He remembers routes through sequences and physical landmarks. He enjoys games that involve strategy and decision-making, where he isn't simply following instructions."
+        },
+        {
+          "name": "Suddha",
+          "age": "30 years old",
+          "text": "She has partial vision and can distinguish light, colour and broad shapes, but cannot reliably identify fine visual details. She frequently uses sound and touch to supplement her remaining vision. She enjoys social games and activities involving memory, and would provide useful insight into the entertainment side of Sound Maze."
+        },
+        {
+          "name": "Devam",
+          "age": "21 years old",
+          "text": "He has severe visual impairment and primarily uses auditory, tactile and environmental cues to navigate. He is particularly comfortable identifying the direction and source of sounds and remembering sensory landmarks. He has experience using accessibility-focused technology and can give detailed feedback on whether the game's sound system feels intuitive or overly complicated."
+        }
+      ]
+    },
+    "interviews": {
+      "heading": "Interview answers",
+      "intro": "Answers from six of the seven participants, grouped under Parisha's six questions and quoted word for word from her transcripts. Shruti's answers are not in the transcripts.",
+      "questions": [
+        {
+          "q": "How do you usually navigate or understand an unfamiliar space?",
+          "answers": [
+            {
+              "name": "Mysha",
+              "text": "I usually depend on sounds around me and landmarks that I can remember. I try to understand the direction of a place by noticing where sounds are coming from and counting steps or turns."
+            },
+            {
+              "name": "Rohan",
+              "text": "I first try to understand the layout through directions and then remember specific points. I also use my cane to understand what's around me."
+            },
+            {
+              "name": "Vedant",
+              "text": "I listen to what's happening around me and try to build an idea of the space in my head. I also use touch to understand where objects and boundaries are."
+            },
+            {
+              "name": "Arjun",
+              "text": "I usually explore it slowly first. I use my cane and listen to the sounds around me to understand the surroundings."
+            },
+            {
+              "name": "Suddha",
+              "text": "I try to create a mental picture based on sounds and touch. I also remember distances by counting steps sometimes."
+            },
+            {
+              "name": "Devam",
+              "text": "I use a combination of my cane, sound and memory. I first try to understand the general direction and then focus on smaller details."
+            }
+          ]
+        },
+        {
+          "q": "What kinds of sounds or environmental cues help you understand where you are or where you need to go?",
+          "answers": [
+            {
+              "name": "Mysha",
+              "text": "Traffic, people talking, doors opening, footsteps and changes in background noise are helpful. Sometimes I can tell if I am near a road or an open space just from the sound."
+            },
+            {
+              "name": "Rohan",
+              "text": "Echoes are useful. If I'm in a large open area, the sound feels different compared to a small room. Voices and traffic are also good indicators."
+            },
+            {
+              "name": "Vedant",
+              "text": "Human voices are probably the most useful because they help me understand where people are. Traffic sounds are also very important outside."
+            },
+            {
+              "name": "Arjun",
+              "text": "Sounds that are consistent are helpful. For example, a fan, a road, a staircase or a person's voice can become a landmark."
+            },
+            {
+              "name": "Suddha",
+              "text": "Different sounds help me understand different environments. For example, I can recognise a busy road because of the traffic and horns."
+            },
+            {
+              "name": "Devam",
+              "text": "Sounds that have a clear direction are useful. I can usually tell when something is coming from the left or right, especially if it is close."
+            }
+          ]
+        },
+        {
+          "q": "How do you remember a route or the layout of a place?",
+          "answers": [
+            {
+              "name": "Mysha",
+              "text": "I remember it in parts — like straight, turn left, stairs, then another turn. I don't really remember it as a complete map."
+            },
+            {
+              "name": "Rohan",
+              "text": "I remember the number of turns and important points. For example, walk straight for some time, turn right after a door and then there are stairs."
+            },
+            {
+              "name": "Vedant",
+              "text": "I remember routes like a sequence. I don't think of it visually. It's more like remembering instructions."
+            },
+            {
+              "name": "Arjun",
+              "text": "I remember important landmarks rather than every single turn. If there are too many turns, I need to repeat the route."
+            },
+            {
+              "name": "Suddha",
+              "text": "I remember it as a story or sequence — first this happens, then I turn, then there is a particular sound or object."
+            },
+            {
+              "name": "Devam",
+              "text": "I remember the sequence of movements and certain sensory landmarks. If a place has a unique sound or texture, it becomes easier to remember."
+            }
+          ]
+        },
+        {
+          "q": "When using touch to understand your surroundings, what kinds of textures or shapes are easiest for you to distinguish?",
+          "answers": [
+            {
+              "name": "Mysha",
+              "text": "Textures that are very different from each other. For example, a smooth surface and a rough surface are easy to identify. Small differences can be confusing."
+            },
+            {
+              "name": "Rohan",
+              "text": "Raised shapes and clear patterns are easiest. If two textures are too similar, I won't be able to distinguish them quickly."
+            },
+            {
+              "name": "Vedant",
+              "text": "Shapes with a strong difference are easier. Raised lines, dots and grooves are quite easy to understand."
+            },
+            {
+              "name": "Arjun",
+              "text": "Simple raised patterns are easiest. A line, circle or dots can be identified quite quickly."
+            },
+            {
+              "name": "Suddha",
+              "text": "Large differences in texture work best. I like patterns that can be recognised immediately rather than having to concentrate for a long time."
+            },
+            {
+              "name": "Devam",
+              "text": "Raised lines and different shapes are easy. I think a tactile grid could work well for a game because you can understand where the boundaries are."
+            }
+          ]
+        },
+        {
+          "q": "Have you played games that rely mainly on sound or touch? What did you like or dislike about them?",
+          "answers": [
+            {
+              "name": "Mysha",
+              "text": "I've played a few audio-based games. I like when sounds are clear and not too many things are happening at once. If there are too many sounds, it becomes difficult to understand what is important."
+            },
+            {
+              "name": "Rohan",
+              "text": "Yes, mostly audio games. I like games where sound actually affects what you have to do instead of just being background music."
+            },
+            {
+              "name": "Vedant",
+              "text": "I've tried some audio games. I liked the challenge, but sometimes the sounds were too similar and I couldn't understand what they meant."
+            },
+            {
+              "name": "Arjun",
+              "text": "I've played audio-based games. I enjoy games where I have to figure something out instead of just following instructions."
+            },
+            {
+              "name": "Suddha",
+              "text": "Not many. I think it would be interesting if the game used sound as part of the actual gameplay rather than simply giving instructions."
+            },
+            {
+              "name": "Devam",
+              "text": "I've played some audio games. The best ones are the ones where you have to listen carefully and make decisions. If the sound is only giving instructions, it becomes boring."
+            }
+          ]
+        },
+        {
+          "q": "If you could design a game that you play without seeing, what would make it enjoyable and easy to understand?",
+          "answers": [
+            {
+              "name": "Mysha",
+              "text": "It should be simple to learn but become more challenging. I would also want sounds to have a clear meaning that I can remember."
+            },
+            {
+              "name": "Rohan",
+              "text": "I think there should be a clear sound system. Once I understand what each sound means, I should be able to play without constantly needing instructions."
+            },
+            {
+              "name": "Vedant",
+              "text": "It should feel like a real game, not like an accessibility exercise. There should be some challenge and maybe different levels."
+            },
+            {
+              "name": "Arjun",
+              "text": "I would want the game to give me enough information to make my own decisions. It shouldn't tell me exactly what to do every time."
+            },
+            {
+              "name": "Suddha",
+              "text": "It should have different levels and maybe a score. I think competition could make it more exciting."
+            },
+            {
+              "name": "Devam",
+              "text": "I would make sound the main challenge. You should have to remember sounds and figure out what they mean rather than just being told where to go."
+            }
+          ]
+        }
+      ]
+    },
+    "insights": {
+      "heading": "What the interviews showed",
+      "paragraphs": [
+        "Sound can be a spatial landmark as well as an instruction. Participants already rely on environmental sounds such as footsteps, voices, traffic and echoes to understand their surroundings and locate themselves within a space.",
+        "Participants also tend to remember routes as sequences of movements and sensory cues rather than as visual maps. This suggests that Sound Maze can use sound sequences to communicate direction, movement and location.",
+        "Touch needs clear differences. Distinct textures, raised lines, dots and grooves are easier to recognise than subtle variations, so the tactile system should use a limited, consistent vocabulary.",
+        "Too many sounds, or sounds that are too similar, can cause confusion and cognitive overload. The sound language needs to stay simple, distinctive and learnable.",
+        "Participants preferred interpreting information and making decisions to simply following instructions. This creates an opportunity to make sound the actual gameplay mechanic.",
+        "Participants also felt that accessibility should not compromise fun or challenge. The game should include progression, memory, problem-solving and scoring, so that Sound Maze is a genuine game."
+      ]
+    },
+    "secondary": {
+      "heading": "Five papers",
+      "intro": "Parisha's secondary research draws on five papers published between 2017 and 2025: two on how blind and visually impaired people form mental maps, two on navigation with touch and sound cues, and one on accessible electronic games for blind children and young people. The full references are below, each with a short note on the paper.",
+      "takeaways_heading": "Takeaways",
+      "takeaways": [
+        "Sound and touch can work together to communicate space without relying on vision. Research on cognitive mapping suggests that people who are blind or visually impaired can build mental maps of unfamiliar environments from non-visual information, such as auditory and tactile cues.",
+        "Sound can communicate spatial information, including direction, movement and environmental landmarks. It needs careful design, because excessive or unclear sound may interfere with other important environmental sounds. In one study, 10 of 12 blind participants said they could pay attention to street sounds better with a vibrating belt than with spoken directions, though they remembered the street sounds equally well with both.",
+        "Tactile information can give physical structure to sound. Studies suggest that tactile maps and audio-tactile systems can support spatial understanding and recall.",
+        "Research also suggests that sound and touch cues can be combined, so the two senses can be designed as complementary channels.",
+        "An important point for Sound Maze is that players may benefit from the freedom to explore, compared with following a fixed sequence of instructions. Arjun and Devam said as much in their interviews, though none of the five papers reports it. Interactive audio-tactile systems let users choose how they explore and build their own understanding of a space.",
+        "Sound Maze should create a new spatial experience of its own, where sound communicates direction and information and touch communicates structure. The player listens, feels, interprets, remembers and makes decisions, and navigation itself becomes the game."
+      ]
+    },
+    "form": {
+      "heading": "The form",
+      "statement": "Sound Maze turns navigation into play. The player hears the path, feels it, remembers it and finds it, without seeing it.",
+      "features": [
+        {
+          "term": "SOUND",
+          "meaning": "INFORMATION"
+        },
+        {
+          "term": "TOUCH",
+          "meaning": "SPACE"
+        },
+        {
+          "term": "MEMORY",
+          "meaning": "NAVIGATION"
+        },
+        {
+          "term": "GAMEPLAY",
+          "meaning": "CHALLENGE"
+        },
+        {
+          "term": "MULTISENSORY DESIGN",
+          "meaning": "EXPERIENCE"
+        }
+      ]
+    },
+    "decisions": {
+      "heading": "From the interviews to the demo",
+      "intro": "Six choices in the browser demo, and the research behind each one.",
+      "items": [
+        {
+          "from": "Mysha said that with too many sounds it becomes difficult to understand what is important. Vedant said the sounds in some audio games were too similar to understand.",
+          "to": "The demo has 11 sounds, each with one meaning. They are introduced a few at a time."
+        },
+        {
+          "from": "Arjun and Devam want to make their own decisions in a game. Rohan wants to play without constantly needing instructions.",
+          "to": "Listens are limited, and the player chooses where to spend them."
+        },
+        {
+          "from": "Mysha, Rohan, Vedant and Suddha remember a route as a sequence.",
+          "to": "Level 3 plays the route as tones before you start. In level 4 you hear the first three forks this way, then you have four listens."
+        },
+        {
+          "from": "Arjun and Devam use sounds as landmarks.",
+          "to": "The fork sound marks every point where you have to decide which way to go."
+        },
+        {
+          "from": "Vedant suggested different levels. Suddha suggested levels and a score.",
+          "to": "There are four levels, and each one is scored out of 100."
+        },
+        {
+          "from": "Parisha's secondary research suggests that excessive or unclear sound can interfere with other environmental sounds.",
+          "to": "The harsh sound is rough and buzzing, but no louder than the soft one."
+        }
+      ]
+    },
+    "sound_key": {
+      "heading": "The sound key",
+      "intro": "The demo has 11 sounds. Each one has a single meaning and keeps it in every level. The narrator introduces them a few at a time.",
+      "her_key": "Parisha's key pairs two sounds with two meanings. A loud sound marks a restricted area or the wrong direction. A soft, smooth sound marks the correct way or the right direction.",
+      "loudness_note": "The demo keeps her meaning with one change. Its harsh sound, for a path that doesn't lead out, is rough and buzzing but no louder than the soft one, so it is safe to hear on headphones. Her secondary research also suggests that excessive or unclear sound can interfere with other environmental sounds."
+    },
+    "maze": {
+      "heading": "Parisha's maze",
+      "intro": "Parisha drew this maze by hand and marked it with red and green dots, using the key beside it. Level 4 of the demo is a trace of her drawing.",
+      "sketch_alt": "Parisha's hand-drawn square maze in thick black lines, with red and green dots inside and a handwritten key on the left. A full description follows.",
+      "sketch_description": "A square maze drawn by hand in thick black lines, on the right side of a light grey page. The start is an opening in the outer wall at the bottom left corner, and the exit is a gap in the right wall at the top right corner. Inside, short walls and turns divide the square into passages that line up on a grid of about 10 by 10 squares. On the left of the page is a key in Parisha's handwriting, headed \"Key\". Under it, a red dot is labelled \"wrong direction\", with an arrow to the words \"loud sound\". Below that, a green dot is labelled \"right direction\", with a curved line to the words \"soft, smooth sound\". The maze holds 14 green dots and 25 red dots. One green dot sits at the opening at the start. The other green dots climb through the left half of the maze to the top, then run along the top rows to the square at the exit. The red dots are spread through the side passages, most of them in the right half of the maze and a few on the left side.",
+      "sketch_caption": "Parisha's hand-drawn maze and key.",
+      "trace_caption": "The trace used in level 4, on a 10 by 10 grid. Like her drawing, it starts at the bottom left and exits at the top right. Green dots mark where she drew green dots, red crosses where she drew red ones.",
+      "trace_notes": [
+        "Every square can be reached from the start.",
+        "The shortest route is 30 steps long and passes six forks.",
+        "Of her 14 green dots, 13 fall on the shortest route. Of her 25 red dots, 24 fall off it.",
+        "One green dot sits just across a wall from the route.",
+        "One red dot sits on the route, in the square beside the exit, where a dead-end branch turns off."
+      ]
+    },
+    "play": {
+      "heading": "The browser demo",
+      "text": "The demo is the sound part of Sound Maze, played in a browser with the keyboard. Headphones help, but speakers work too. Level 1 is one path with no forks. Level 2 adds two forks, and you can listen down a path with Shift and an arrow key. In level 3 you hear the route as tones before you start. Level 4 is Parisha's maze. The screen stays blank, like a sheet of paper, while you play. When you get out, the maze appears in ink with your footsteps on it: green dots on the shortest route and red crosses off it. A narrator, in English or Hindi, introduces each new sound once, speaks up when you walk into a wall and reads out your results at the end of the level.",
+      "button": "Play the maze"
+    },
+    "footer": {
+      "made_by": "Sound Maze is a design project by Parisha Jain.",
+      "sources_heading": "Sources",
+      "translation_note": ""
+    }
+  },
+  "hi": {
+    "meta": {
+      "title": "परिशा जैन का साउंड मेज़",
+      "description": "साउंड मेज़ भूलभुलैया का एक खेल है, जिसे आवाज़ और स्पर्श के सहारे खेला जाता है। इसे परिशा जैन ने डिज़ाइन किया है। उनका शोध पढ़िए और चार लेवल वाला ब्राउज़र डेमो खेलिए।"
+    },
+    "skip_link": "मुख्य सामग्री पर जाइए",
+    "lang_switch": "English",
+    "nav_label": "पेज के हिस्से",
+    "nav": {
+      "idea": "विचार",
+      "research": "शोध",
+      "sounds": "आवाज़ें",
+      "maze": "भूलभुलैया",
+      "play": "खेलिए"
+    },
+    "hero": {
+      "title": "साउंड मेज़",
+      "lede": "भूलभुलैया का एक खेल, जिसे आवाज़ और स्पर्श के सहारे पार किया जाता है। परिशा का डिज़ाइन छूकर समझी जाने वाली एक भूलभुलैया और एक गोटी को आवाज़ों की एक भाषा से जोड़ता है। इस साइट पर दिया गया डेमो इसका आवाज़ वाला हिस्सा है, जो ब्राउज़र में खेला जाता है।",
+      "byline": "परिशा जैन का एक डिज़ाइन प्रोजेक्ट",
+      "play": "भूलभुलैया खेलिए",
+      "play_note": "कीबोर्ड से खेला जाता है। हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं।",
+      "hear": "आवाज़ें सुनिए"
+    },
+    "concept": {
+      "heading": "विचार",
+      "paragraphs": [
+        "साउंड मेज़ कई इंद्रियों से खेला जाने वाला, रास्ता ढूँढने का खेल है। इसमें खिलाड़ी को आँखों पर निर्भर हुए बिना एक ठोस जगह को समझना और उसमें रास्ता ढूँढना होता है। यह खेल इस बात की पड़ताल करता है कि आवाज़, स्पर्श और जगहों की याद मिलकर किसी जगह की समझ कैसे बना सकते हैं।",
+        "खिलाड़ी एक असली गोटी को छूकर समझी जाने वाली भूलभुलैया या ग्रिड पर आगे बढ़ाता है। रास्ते की जानकारी साउंड मैपिंग से मिलती है, यानी अलग-अलग आवाज़ें जगह से जुड़े अलग-अलग निर्देश देती हैं, जैसे दिशा, आगे बढ़ना, रुकावटें, दूरी और मंज़िल। खिलाड़ी को सुनना, मतलब समझना, याद रखना और छूकर भूलभुलैया में रास्ता ढूँढना होता है।",
+        "यह खेल खिलाड़ियों को अपनी आवाज़ों की भाषा धीरे-धीरे सिखाता है। ऊँचा सुर एक दिशा बता सकता है, नीचा सुर दूसरी, और सुरों के मेल, लय या सुर में बदलाव से मोड़, रुकावटें या आगे बढ़ना बताया जा सकता है। जैसे-जैसे लेवल आगे बढ़ते हैं, खिलाड़ियों को आवाज़ों के और पेचीदा क्रम याद रखने पड़ते हैं और उन्हें असली चाल में बदलना पड़ता है।",
+        "स्पर्श जगह को एक ठोस रूप देता है। छूकर समझी जाने वाली भूलभुलैया में खिलाड़ी रास्ते, किनारे, बनावट और रुकावटें महसूस करते हैं। खेल के ज़्यादा विकसित रूपों में कंपन, तापमान, हवा का बहाव या गंध भी इस्तेमाल हो सकती है।",
+        "खिलाड़ी का लक्ष्य भूलभुलैया के आख़िर तक पहुँचना है। प्रोजेक्ट का लक्ष्य यह समझना है कि जब देखकर मिलने वाली जानकारी हटा दी जाए, तब लोग मन में नक्शा कैसे बनाते हैं।"
+      ]
+    },
+    "question": {
+      "heading": "शोध का सवाल",
+      "text": "कई इंद्रियों से खेले जाने वाले खेल में, साउंड मैपिंग और स्पर्श से मिलने वाली जानकारी के ज़रिए जगह, दिशा और रास्ते की समझ कैसे दी जा सकती है?",
+      "objectives_heading": "उद्देश्य",
+      "objectives": [
+        "जगह की जानकारी देने के ज़रिए के तौर पर आवाज़ को परखना।",
+        "समझना कि लोग सुनाई देने वाले संकेतों का मतलब कैसे निकालते हैं और उन्हें कैसे याद रखते हैं।",
+        "स्पर्श पर आधारित एक ऐसा सिस्टम बनाना, जो आवाज़ के सहारे रास्ता ढूँढने में साथ दे।",
+        "सिर्फ़ काम के लिए बने ऐक्सेसिबिलिटी टूल के बजाय एक दिलचस्प खेल बनाना।",
+        "परखना कि नज़र का सहारा हटने पर जगह की समझ, याददाश्त और फ़ैसले लेने का तरीका कैसे बदलता है।",
+        "ऐसा खेल डिज़ाइन करना, जिसे दृष्टिबाधित और देख सकने वाले, दोनों तरह के खिलाड़ी खेल सकें।"
+      ],
+      "audience_heading": "किनके लिए",
+      "audience": [
+        "18 से 35 साल के लोग।",
+        "दृष्टिबाधित लोग, जो इतने बड़े हों कि हाथ से खेला जाने वाला कोई खेल समझ सकें और ख़ुद खेल सकें।"
+      ]
+    },
+    "people": {
+      "heading": "सात प्रतिभागी",
+      "intro": "परिशा ने 18 से 30 साल के सात लोगों का इंटरव्यू लिया। सभी दृष्टिहीन या दृष्टिबाधित हैं।",
+      "profiles": [
+        {
+          "name": "मायशा",
+          "age": "18 साल",
+          "text": "उन्हें एक दुर्लभ आनुवंशिक स्थिति है, जिसमें शरीर पर्याप्त मेलेनिन नहीं बना पाता। मेलेनिन वह प्राकृतिक रसायन है जो त्वचा, बालों और आँखों को रंग देता है। उनकी दृष्टि 45% है।"
+        },
+        {
+          "name": "श्रुति",
+          "age": "20 साल",
+          "text": "उनकी दृष्टि कम है। वे रोशनी, आकार और बड़ी चीज़ें पहचान पाती हैं, पर छोटी बारीकियाँ देखने और अनजान जगहों में रास्ता ढूँढने में उन्हें दिक्कत होती है। नई जगहों में चलते हुए वे स्पर्श, आसपास की आवाज़ों और याददाश्त, तीनों का सहारा लेती हैं। उन्हें इंटरैक्टिव गतिविधियाँ पसंद हैं और नए सिस्टम सीखने में वे सहज हैं।"
+        },
+        {
+          "name": "रोहन",
+          "age": "23 साल",
+          "text": "उनकी दृष्टि बहुत कम है और वे मुख्य रूप से सुनकर और छूकर मिलने वाली जानकारी पर निर्भर रहते हैं। रास्ता ढूँढने के लिए वे छड़ी इस्तेमाल करते हैं, और आसपास की आवाज़ों पर उनका ख़ास ध्यान रहता है, जैसे ट्रैफ़िक, कदमों की आहट, लोगों की आवाज़ें और गूँज। उन्हें ऑडियो गेम खेलने का अनुभव है और ऐसी गतिविधियाँ पसंद हैं जिनमें कोई समस्या सुलझानी हो।"
+        },
+        {
+          "name": "वेदांत",
+          "age": "21 साल",
+          "text": "रोज़मर्रा के कामों के लिए उनकी दृष्टि सीमित है, और अनजान जगहों में वे काफ़ी हद तक स्पर्श और आवाज़ पर निर्भर रहते हैं। जगहों को वे किसी देखे हुए नक्शे की तरह नहीं, बल्कि चलने-मुड़ने के क्रम की तरह याद रखते हैं। उन्हें टेक्नोलॉजी और गेम में दिलचस्पी है, और यह परखने के लिए वे सही रहेंगे कि आवाज़ों की नई भाषा कितनी आसानी से सीखी जा सकती है।"
+        },
+        {
+          "name": "अर्जुन",
+          "age": "24 साल",
+          "text": "वे दृष्टिहीन हैं और जानी-पहचानी और अनजान, दोनों तरह की जगहों में ख़ुद रास्ता ढूँढते हैं। इसके लिए वे छड़ी, सुनाई देने वाले संकेतों और छूकर पहचानी जाने वाली निशानियों का इस्तेमाल करते हैं। रास्ते वे क्रम और ठोस निशानियों के सहारे याद रखते हैं। उन्हें ऐसे गेम पसंद हैं जिनमें रणनीति बनानी हो और फ़ैसले लेने हों, जहाँ बस निर्देश मानने भर का काम न हो।"
+        },
+        {
+          "name": "सुद्धा",
+          "age": "30 साल",
+          "text": "उनकी दृष्टि आंशिक है। वे रोशनी, रंग और मोटे-मोटे आकार पहचान लेती हैं, पर बारीक चीज़ें भरोसे के साथ नहीं पहचान पातीं। अपनी बची हुई दृष्टि के साथ वे अक्सर आवाज़ और स्पर्श का सहारा भी लेती हैं। उन्हें दूसरों के साथ मिलकर खेले जाने वाले खेल और याददाश्त वाली गतिविधियाँ पसंद हैं, और साउंड मेज़ के मनोरंजन वाले पहलू पर वे काम की राय दे सकती हैं।"
+        },
+        {
+          "name": "देवम",
+          "age": "21 साल",
+          "text": "उनकी दृष्टि बहुत कम है और रास्ता ढूँढने के लिए वे मुख्य रूप से सुनकर, छूकर और आसपास के माहौल से मिलने वाले संकेतों का इस्तेमाल करते हैं। आवाज़ किस दिशा से और कहाँ से आ रही है, यह पहचानने में और महसूस की जा सकने वाली निशानियाँ याद रखने में वे ख़ास तौर पर सहज हैं। उन्हें ऐक्सेसिबिलिटी पर केंद्रित टेक्नोलॉजी इस्तेमाल करने का अनुभव है, और वे विस्तार से बता सकते हैं कि खेल की आवाज़ों का सिस्टम आसानी से समझ आता है या ज़रूरत से ज़्यादा उलझा हुआ लगता है।"
+        }
+      ]
+    },
+    "interviews": {
+      "heading": "इंटरव्यू में मिले जवाब",
+      "intro": "सात में से छह प्रतिभागियों के जवाब, परिशा के छह सवालों के हिसाब से। जवाब परिशा के इंटरव्यू के लिखित रिकॉर्ड से लिए गए हैं। श्रुति के जवाब उस रिकॉर्ड में नहीं हैं।",
+      "questions": [
+        {
+          "q": "किसी अनजान जगह में आप आमतौर पर रास्ता कैसे ढूँढते हैं, या उस जगह को कैसे समझते हैं?",
+          "answers": [
+            {
+              "name": "मायशा",
+              "text": "मैं आमतौर पर आसपास की आवाज़ों और उन निशानियों पर निर्भर रहती हूँ जो मुझे याद रह जाती हैं। आवाज़ें कहाँ से आ रही हैं, इस पर ध्यान देकर और कदम या मोड़ गिनकर मैं समझने की कोशिश करती हूँ कि कोई जगह किस दिशा में है।"
+            },
+            {
+              "name": "रोहन",
+              "text": "पहले मैं दिशाओं के सहारे यह समझने की कोशिश करता हूँ कि क्या कहाँ है, फिर कुछ ख़ास जगहें याद रखता हूँ। आसपास क्या है, यह समझने के लिए मैं अपनी छड़ी का भी इस्तेमाल करता हूँ।"
+            },
+            {
+              "name": "वेदांत",
+              "text": "आसपास क्या हो रहा है, वह मैं सुनता हूँ और दिमाग़ में उस जगह का एक अंदाज़ा बनाने की कोशिश करता हूँ। चीज़ें और किनारे कहाँ हैं, यह समझने के लिए मैं छूकर भी देखता हूँ।"
+            },
+            {
+              "name": "अर्जुन",
+              "text": "आमतौर पर पहले मैं धीरे-धीरे उस जगह में घूमकर उसे जानता हूँ। आसपास का माहौल समझने के लिए मैं अपनी छड़ी इस्तेमाल करता हूँ और आसपास की आवाज़ें सुनता हूँ।"
+            },
+            {
+              "name": "सुद्धा",
+              "text": "जो सुनती हूँ और छूकर महसूस करती हूँ, उसके हिसाब से मैं मन में एक तस्वीर बनाने की कोशिश करती हूँ। कभी-कभी मैं कदम गिनकर दूरियाँ भी याद रखती हूँ।"
+            },
+            {
+              "name": "देवम",
+              "text": "मैं छड़ी, आवाज़ और याददाश्त, तीनों को मिलाकर इस्तेमाल करता हूँ। पहले मैं मोटे तौर पर दिशा समझने की कोशिश करता हूँ, फिर छोटी-छोटी बातों पर ध्यान देता हूँ।"
+            }
+          ]
+        },
+        {
+          "q": "किस तरह की आवाज़ें या आसपास के संकेत आपको यह समझने में मदद करते हैं कि आप कहाँ हैं या आपको कहाँ जाना है?",
+          "answers": [
+            {
+              "name": "मायशा",
+              "text": "ट्रैफ़िक, लोगों की बातचीत, दरवाज़े खुलने की आवाज़, कदमों की आहट और आसपास के शोर में बदलाव, ये सब मदद करते हैं। कभी-कभी मैं सिर्फ़ आवाज़ से बता सकती हूँ कि मैं किसी सड़क के पास हूँ या किसी खुली जगह में।"
+            },
+            {
+              "name": "रोहन",
+              "text": "गूँज काम आती है। अगर मैं किसी बड़ी खुली जगह में हूँ, तो आवाज़ छोटे कमरे के मुकाबले अलग लगती है। लोगों की आवाज़ें और ट्रैफ़िक भी अच्छे संकेत हैं।"
+            },
+            {
+              "name": "वेदांत",
+              "text": "लोगों की आवाज़ें शायद सबसे ज़्यादा काम आती हैं, क्योंकि उनसे मुझे पता चलता है कि लोग कहाँ हैं। बाहर ट्रैफ़िक की आवाज़ें भी बहुत ज़रूरी होती हैं।"
+            },
+            {
+              "name": "अर्जुन",
+              "text": "जो आवाज़ें लगातार एक जैसी रहती हैं, वे मदद करती हैं। जैसे, कोई पंखा, सड़क, सीढ़ियाँ या किसी इंसान की आवाज़ एक निशानी बन सकती है।"
+            },
+            {
+              "name": "सुद्धा",
+              "text": "अलग-अलग आवाज़ों से मुझे अलग-अलग माहौल समझ आता है। जैसे, ट्रैफ़िक और हॉर्न की वजह से मैं भीड़-भाड़ वाली सड़क पहचान लेती हूँ।"
+            },
+            {
+              "name": "देवम",
+              "text": "जिन आवाज़ों की दिशा साफ़ हो, वे काम आती हैं। आमतौर पर मैं बता सकता हूँ कि कोई चीज़ बाईं ओर से आ रही है या दाईं ओर से, ख़ासकर अगर वह पास हो।"
+            }
+          ]
+        },
+        {
+          "q": "आप कोई रास्ता, या किसी जगह में क्या कहाँ है, यह कैसे याद रखते हैं?",
+          "answers": [
+            {
+              "name": "मायशा",
+              "text": "मैं उसे टुकड़ों में याद रखती हूँ, जैसे: सीधे, बाएँ मुड़ो, सीढ़ियाँ, फिर एक और मोड़। मुझे वह पूरे नक्शे की तरह याद नहीं रहता।"
+            },
+            {
+              "name": "रोहन",
+              "text": "मैं याद रखता हूँ कि कितने मोड़ हैं और कौन-सी जगहें ज़रूरी हैं। जैसे, कुछ देर सीधे चलो, एक दरवाज़े के बाद दाएँ मुड़ो और फिर सीढ़ियाँ आती हैं।"
+            },
+            {
+              "name": "वेदांत",
+              "text": "मैं रास्तों को एक क्रम की तरह याद रखता हूँ। मैं उन्हें तस्वीर की तरह नहीं सोचता। यह कुछ-कुछ निर्देश याद रखने जैसा है।"
+            },
+            {
+              "name": "अर्जुन",
+              "text": "मैं हर एक मोड़ नहीं, बल्कि ज़रूरी निशानियाँ याद रखता हूँ। अगर बहुत ज़्यादा मोड़ हों, तो मुझे वह रास्ता दोहराना पड़ता है।"
+            },
+            {
+              "name": "सुद्धा",
+              "text": "मैं उसे एक कहानी या क्रम की तरह याद रखती हूँ: पहले यह होता है, फिर मैं मुड़ती हूँ, फिर कोई ख़ास आवाज़ या चीज़ आती है।"
+            },
+            {
+              "name": "देवम",
+              "text": "मैं चलने-मुड़ने का क्रम और कुछ ऐसी निशानियाँ याद रखता हूँ जिन्हें महसूस किया जा सके। अगर किसी जगह की आवाज़ या बनावट अलग-सी हो, तो उसे याद रखना आसान हो जाता है।"
+            }
+          ]
+        },
+        {
+          "q": "आसपास की चीज़ों को छूकर समझते समय, किस तरह की बनावट या आकार में फ़र्क करना आपके लिए सबसे आसान होता है?",
+          "answers": [
+            {
+              "name": "मायशा",
+              "text": "ऐसी बनावटें जो एक-दूसरे से बहुत अलग हों। जैसे, चिकनी सतह और खुरदुरी सतह आसानी से पहचान में आ जाती हैं। छोटे-छोटे फ़र्क उलझन में डाल सकते हैं।"
+            },
+            {
+              "name": "रोहन",
+              "text": "उभरे हुए आकार और साफ़ पैटर्न सबसे आसान होते हैं। अगर दो बनावटें बहुत मिलती-जुलती हों, तो मैं उनमें जल्दी फ़र्क नहीं कर पाऊँगा।"
+            },
+            {
+              "name": "वेदांत",
+              "text": "जिन आकारों में साफ़-साफ़ फ़र्क हो, वे आसान होते हैं। उभरी हुई लकीरें, बिंदु और खाँचे समझना काफ़ी आसान है।"
+            },
+            {
+              "name": "अर्जुन",
+              "text": "सीधे-सादे उभरे हुए पैटर्न सबसे आसान होते हैं। कोई लकीर, गोला या बिंदु काफ़ी जल्दी पहचान में आ जाते हैं।"
+            },
+            {
+              "name": "सुद्धा",
+              "text": "बनावट में बड़ा फ़र्क हो तो सबसे अच्छा रहता है। मुझे ऐसे पैटर्न पसंद हैं जो तुरंत पहचान में आ जाएँ, जिनके लिए देर तक ध्यान लगाकर न बैठना पड़े।"
+            },
+            {
+              "name": "देवम",
+              "text": "उभरी हुई लकीरें और अलग-अलग आकार आसान होते हैं। मुझे लगता है कि किसी गेम के लिए छूकर महसूस होने वाला ग्रिड अच्छा रहेगा, क्योंकि उससे समझ आता है कि किनारे कहाँ हैं।"
+            }
+          ]
+        },
+        {
+          "q": "क्या आपने ऐसे गेम खेले हैं जो मुख्य रूप से आवाज़ या छूने पर टिके हों? उनमें आपको क्या अच्छा लगा और क्या नहीं?",
+          "answers": [
+            {
+              "name": "मायशा",
+              "text": "मैंने कुछ ऑडियो गेम खेले हैं। मुझे अच्छा लगता है जब आवाज़ें साफ़ हों और एक साथ बहुत सारी चीज़ें न हो रही हों। अगर बहुत ज़्यादा आवाज़ें हों, तो समझना मुश्किल हो जाता है कि ज़रूरी क्या है।"
+            },
+            {
+              "name": "रोहन",
+              "text": "हाँ, ज़्यादातर ऑडियो गेम। मुझे ऐसे गेम पसंद हैं जिनमें आवाज़ सिर्फ़ बैकग्राउंड म्यूज़िक न हो, बल्कि सच में उससे तय हो कि आपको क्या करना है।"
+            },
+            {
+              "name": "वेदांत",
+              "text": "मैंने कुछ ऑडियो गेम आज़माए हैं। मुझे उनकी चुनौती अच्छी लगी, पर कभी-कभी आवाज़ें बहुत मिलती-जुलती थीं और मैं समझ नहीं पाता था कि उनका मतलब क्या है।"
+            },
+            {
+              "name": "अर्जुन",
+              "text": "मैंने ऑडियो गेम खेले हैं। मुझे ऐसे गेम में मज़ा आता है जिनमें सिर्फ़ निर्देश मानने के बजाय मुझे ख़ुद कुछ पता लगाना पड़े।"
+            },
+            {
+              "name": "सुद्धा",
+              "text": "ज़्यादा नहीं। मुझे लगता है कि अगर गेम आवाज़ को सिर्फ़ निर्देश देने के लिए नहीं, बल्कि असली खेल के हिस्से की तरह इस्तेमाल करे, तो दिलचस्प होगा।"
+            },
+            {
+              "name": "देवम",
+              "text": "मैंने कुछ ऑडियो गेम खेले हैं। सबसे अच्छे वे होते हैं जिनमें ध्यान से सुनना पड़ता है और फ़ैसले लेने पड़ते हैं। अगर आवाज़ सिर्फ़ निर्देश दे रही हो, तो गेम बोरिंग हो जाता है।"
+            }
+          ]
+        },
+        {
+          "q": "अगर आप बिना देखे खेला जाने वाला कोई गेम डिज़ाइन कर पाते, तो कौन-सी बातें उसे मज़ेदार और समझने में आसान बनातीं?",
+          "answers": [
+            {
+              "name": "मायशा",
+              "text": "उसे सीखना आसान होना चाहिए, पर आगे चलकर वह मुश्किल होता जाए। मैं यह भी चाहूँगी कि हर आवाज़ का एक साफ़ मतलब हो जो मुझे याद रह सके।"
+            },
+            {
+              "name": "रोहन",
+              "text": "मुझे लगता है कि आवाज़ों का एक साफ़ सिस्टम होना चाहिए। एक बार समझ आ जाए कि हर आवाज़ का क्या मतलब है, तो मुझे बार-बार निर्देशों की ज़रूरत के बिना खेल पाना चाहिए।"
+            },
+            {
+              "name": "वेदांत",
+              "text": "वह असली गेम जैसा लगना चाहिए, ऐक्सेसिबिलिटी की किसी एक्सरसाइज़ जैसा नहीं। उसमें कुछ चुनौती होनी चाहिए और शायद अलग-अलग लेवल भी।"
+            },
+            {
+              "name": "अर्जुन",
+              "text": "मैं चाहूँगा कि गेम मुझे इतनी जानकारी दे कि मैं अपने फ़ैसले ख़ुद ले सकूँ। उसे हर बार ठीक-ठीक यह नहीं बताना चाहिए कि मुझे क्या करना है।"
+            },
+            {
+              "name": "सुद्धा",
+              "text": "उसमें अलग-अलग लेवल होने चाहिए और शायद स्कोर भी। मुझे लगता है कि मुकाबले से वह और रोमांचक बन सकता है।"
+            },
+            {
+              "name": "देवम",
+              "text": "मैं आवाज़ को ही मुख्य चुनौती बनाता। आपको आवाज़ें याद रखनी पड़ें और ख़ुद समझना पड़े कि उनका क्या मतलब है, न कि बस यह बताया जाए कि कहाँ जाना है।"
+            }
+          ]
+        }
+      ]
+    },
+    "insights": {
+      "heading": "इंटरव्यू से क्या पता चला",
+      "paragraphs": [
+        "आवाज़ निर्देश होने के साथ-साथ जगह की निशानी भी बन सकती है। अपने आसपास को समझने और किसी जगह में यह जानने के लिए कि वे कहाँ हैं, प्रतिभागी पहले से ही आसपास की आवाज़ों पर निर्भर रहते हैं, जैसे कदमों की आहट, लोगों की आवाज़ें, ट्रैफ़िक और गूँज।",
+        "प्रतिभागी रास्तों को अक्सर देखे हुए नक्शे की तरह नहीं, बल्कि चलने-मुड़ने और इंद्रियों से मिले संकेतों के क्रम की तरह याद रखते हैं। इससे लगता है कि साउंड मेज़ दिशा, चाल और जगह बताने के लिए आवाज़ों के क्रम का इस्तेमाल कर सकता है।",
+        "छूकर पहचानने के लिए साफ़ फ़र्क ज़रूरी है। हल्के-फुल्के फ़र्क के मुकाबले अलग-अलग बनावटें, उभरी लकीरें, बिंदु और खाँचे ज़्यादा आसानी से पहचान में आते हैं। इसलिए स्पर्श वाले सिस्टम में गिने-चुने निशान होने चाहिए, जिनका मतलब हर बार एक ही रहे।",
+        "बहुत ज़्यादा आवाज़ें, या बहुत मिलती-जुलती आवाज़ें, उलझन पैदा कर सकती हैं और दिमाग़ पर ज़रूरत से ज़्यादा बोझ डाल सकती हैं। आवाज़ों की भाषा सरल, एक-दूसरे से अलग और सीखने लायक होनी चाहिए।",
+        "प्रतिभागियों को सिर्फ़ निर्देश मानने के बजाय जानकारी का मतलब निकालना और फ़ैसले लेना ज़्यादा पसंद था। इससे आवाज़ को ही खेल का मुख्य आधार बनाने की गुंजाइश बनती है।",
+        "प्रतिभागियों को यह भी लगा कि ऐक्सेसिबिलिटी के नाम पर मज़े या चुनौती से समझौता नहीं होना चाहिए। खेल में धीरे-धीरे बढ़ती मुश्किल, याददाश्त, समस्या सुलझाना और स्कोर होना चाहिए, ताकि साउंड मेज़ सचमुच का खेल हो।"
+      ]
+    },
+    "secondary": {
+      "heading": "पाँच शोध-पत्र",
+      "intro": "परिशा ने 2017 से 2025 के बीच छपे पाँच शोध-पत्र भी पढ़े: दो इस पर कि दृष्टिहीन और दृष्टिबाधित लोग मन में नक्शे कैसे बनाते हैं, दो स्पर्श और आवाज़ के संकेतों से रास्ता ढूँढने पर, और एक दृष्टिहीन बच्चों और युवाओं के लिए बनाए गए इलेक्ट्रॉनिक गेम पर। पूरे संदर्भ नीचे दिए गए हैं, और हर एक के साथ उस शोध-पत्र के बारे में एक छोटा नोट है।",
+      "takeaways_heading": "मुख्य बातें",
+      "takeaways": [
+        "आवाज़ और स्पर्श मिलकर, आँखों पर निर्भर हुए बिना, जगह की समझ दे सकते हैं। मन में नक्शा बनाने (कॉग्निटिव मैपिंग) पर हुए शोध से लगता है कि दृष्टिहीन या दृष्टिबाधित लोग बिना देखे मिलने वाली जानकारी से, जैसे सुनाई देने वाले और छूकर महसूस होने वाले संकेतों से, अनजान जगहों के नक्शे मन में बना सकते हैं।",
+        "आवाज़ जगह की जानकारी दे सकती है, जैसे दिशा, चाल और आसपास की निशानियाँ। पर इसे सोच-समझकर डिज़ाइन करना ज़रूरी है, क्योंकि ज़रूरत से ज़्यादा आवाज़, या ऐसी आवाज़ जो साफ़ समझ न आए, आसपास की दूसरी ज़रूरी आवाज़ों को सुनने में रुकावट डाल सकती है। एक अध्ययन में 12 में से 10 दृष्टिहीन प्रतिभागियों ने कहा कि बोलकर दिए गए निर्देशों के मुकाबले कंपन करने वाली बेल्ट के साथ वे सड़क की आवाज़ों पर बेहतर ध्यान दे पाए, हालाँकि सड़क की आवाज़ें उन्हें दोनों तरीकों में बराबर याद रहीं।",
+        "स्पर्श से मिलने वाली जानकारी आवाज़ को एक ठोस ढाँचा दे सकती है। अध्ययनों से लगता है कि छूकर पढ़े जाने वाले नक्शे और आवाज़-स्पर्श वाले सिस्टम जगह को समझने और याद रखने में मदद कर सकते हैं।",
+        "शोध से यह भी लगता है कि आवाज़ और स्पर्श के संकेतों को मिलाकर इस्तेमाल किया जा सकता है, इसलिए डिज़ाइन में इन दोनों इंद्रियों को ऐसे ज़रियों की तरह रखा जा सकता है जो एक-दूसरे का साथ दें।",
+        "साउंड मेज़ के लिए एक अहम बात यह है कि तय क्रम में निर्देश मानने के मुकाबले, ख़ुद खोजबीन करने की आज़ादी से खिलाड़ियों को ज़्यादा फ़ायदा हो सकता है। अर्जुन और देवम ने अपने इंटरव्यू में कुछ ऐसी ही बात कही, हालाँकि पाँचों शोध-पत्रों में से किसी में यह बात नहीं आई है। इंटरैक्टिव आवाज़-स्पर्श वाले सिस्टम में लोग ख़ुद चुनते हैं कि वे कैसे खोजबीन करें, और किसी जगह की अपनी समझ ख़ुद बनाते हैं।",
+        "साउंड मेज़ को जगह का अपना एक नया अनुभव रचना चाहिए, जिसमें आवाज़ दिशा और जानकारी दे, और स्पर्श ढाँचा बताए। खिलाड़ी सुनता है, छूकर महसूस करता है, मतलब समझता है, याद रखता है और फ़ैसले लेता है, और रास्ता ढूँढना ही खेल बन जाता है।"
+      ]
+    },
+    "form": {
+      "heading": "खेल का रूप",
+      "statement": "साउंड मेज़ रास्ता ढूँढने को खेल बना देता है। खिलाड़ी रास्ते को सुनता है, छूकर महसूस करता है, याद रखता है और बिना देखे उसे ढूँढ लेता है।",
+      "features": [
+        {
+          "term": "आवाज़",
+          "meaning": "जानकारी"
+        },
+        {
+          "term": "स्पर्श",
+          "meaning": "जगह"
+        },
+        {
+          "term": "याददाश्त",
+          "meaning": "रास्ता ढूँढना"
+        },
+        {
+          "term": "खेल",
+          "meaning": "चुनौती"
+        },
+        {
+          "term": "कई इंद्रियों वाला डिज़ाइन",
+          "meaning": "अनुभव"
+        }
+      ]
+    },
+    "decisions": {
+      "heading": "इंटरव्यू से डेमो तक",
+      "intro": "ब्राउज़र डेमो में लिए गए छह फ़ैसले, और हर एक के पीछे का शोध।",
+      "items": [
+        {
+          "from": "मायशा ने कहा कि बहुत ज़्यादा आवाज़ें हों तो समझना मुश्किल हो जाता है कि ज़रूरी क्या है। वेदांत ने कहा कि कुछ ऑडियो गेम में आवाज़ें इतनी मिलती-जुलती थीं कि उनका मतलब समझ नहीं आता था।",
+          "to": "डेमो में 11 आवाज़ें हैं और हर एक का एक ही मतलब है। ये आवाज़ें थोड़ी-थोड़ी करके सिखाई जाती हैं।"
+        },
+        {
+          "from": "अर्जुन और देवम गेम में अपने फ़ैसले ख़ुद लेना चाहते हैं। रोहन बार-बार निर्देशों की ज़रूरत के बिना खेलना चाहते हैं।",
+          "to": "सुनने के मौके गिने-चुने हैं, और खिलाड़ी ख़ुद तय करता है कि उन्हें कहाँ इस्तेमाल करे।"
+        },
+        {
+          "from": "मायशा, रोहन, वेदांत और सुद्धा रास्ते को एक क्रम की तरह याद रखते हैं।",
+          "to": "लेवल 3 में शुरू करने से पहले रास्ता धुनों में सुनाया जाता है। लेवल 4 में पहले तीन दोराहे इसी तरह सुनाए जाते हैं, उसके बाद आप चार बार सुन सकते हैं।"
+        },
+        {
+          "from": "अर्जुन और देवम आवाज़ों को निशानियों की तरह इस्तेमाल करते हैं।",
+          "to": "दोराहे की आवाज़ हर उस जगह पर आती है जहाँ आपको तय करना होता है कि किस तरफ़ जाएँ।"
+        },
+        {
+          "from": "वेदांत ने अलग-अलग लेवल का सुझाव दिया। सुद्धा ने लेवल और स्कोर का सुझाव दिया।",
+          "to": "चार लेवल हैं, और हर लेवल का स्कोर 100 में से मिलता है।"
+        },
+        {
+          "from": "परिशा के पढ़े शोध-पत्रों से लगता है कि ज़रूरत से ज़्यादा आवाज़, या ऐसी आवाज़ जो साफ़ समझ न आए, आसपास की दूसरी आवाज़ों को सुनने में रुकावट डाल सकती है।",
+          "to": "कर्कश आवाज़ खुरदुरी और भिनभिनाहट वाली है, पर नरम आवाज़ से ज़्यादा तेज़ नहीं है।"
+        }
+      ]
+    },
+    "sound_key": {
+      "heading": "आवाज़ों के मतलब",
+      "intro": "डेमो में 11 आवाज़ें हैं। हर आवाज़ का एक ही मतलब है, और हर लेवल में वही मतलब रहता है। खेल में ये आवाज़ें बोलकर, थोड़ी-थोड़ी करके सिखाई जाती हैं।",
+      "her_key": "परिशा की संकेत-सूची में दो आवाज़ों के दो मतलब हैं। तेज़ आवाज़ ऐसी जगह बताती है जहाँ जाना मना है, या ग़लत दिशा। नरम, मुलायम आवाज़ सही रास्ता या सही दिशा बताती है।",
+      "loudness_note": "डेमो में उनके दिए मतलब वही रखे गए हैं, बस एक बदलाव के साथ। बाहर न ले जाने वाले रास्ते के लिए डेमो में जो कर्कश आवाज़ है, वह खुरदुरी और भिनभिनाहट वाली है, पर नरम आवाज़ से ज़्यादा तेज़ नहीं, इसलिए हेडफ़ोन पर इसे सुनना सुरक्षित है। परिशा के पढ़े शोध-पत्रों से भी लगता है कि ज़रूरत से ज़्यादा आवाज़, या ऐसी आवाज़ जो साफ़ समझ न आए, आसपास की दूसरी आवाज़ों को सुनने में रुकावट डाल सकती है।"
+    },
+    "maze": {
+      "heading": "परिशा की भूलभुलैया",
+      "intro": "परिशा ने यह भूलभुलैया हाथ से बनाई और बगल में दी संकेत-सूची के हिसाब से इस पर लाल और हरे बिंदु लगाए। डेमो का लेवल 4 उनके इसी चित्र को ग्रिड पर उतारकर बनाया गया है।",
+      "sketch_alt": "परिशा की हाथ से बनाई चौकोर भूलभुलैया, मोटी काली लकीरों में, जिसके अंदर लाल और हरे बिंदु हैं और बाईं ओर हाथ से लिखी संकेत-सूची है। पूरा विवरण आगे है।",
+      "sketch_description": "हल्के स्लेटी पन्ने के दाईं ओर, मोटी काली लकीरों से हाथ से बनी एक चौकोर भूलभुलैया। शुरुआत नीचे बाएँ कोने पर बाहरी दीवार में एक खुली जगह है, और बाहर का रास्ता ऊपर दाएँ कोने पर दाईं दीवार में एक खुली जगह है। अंदर छोटी-छोटी दीवारें और मोड़ इस चौकोर को गलियारों में बाँटते हैं, जो लगभग 10 बाय 10 खानों के ग्रिड पर बैठते हैं। पन्ने के बाईं ओर परिशा की लिखावट में एक संकेत-सूची है, जिसके ऊपर अंग्रेज़ी में \"Key\" लिखा है। उसके नीचे एक लाल बिंदु के आगे \"wrong direction\" (ग़लत दिशा) लिखा है, और एक तीर \"loud sound\" (तेज़ आवाज़) शब्दों तक जाता है। उसके नीचे एक हरे बिंदु के आगे \"right direction\" (सही दिशा) लिखा है, और एक घुमावदार लकीर \"soft, smooth sound\" (नरम, मुलायम आवाज़) शब्दों तक जाती है। भूलभुलैया में 14 हरे और 25 लाल बिंदु हैं। एक हरा बिंदु शुरुआत की खुली जगह पर है। बाकी हरे बिंदु भूलभुलैया के बाएँ आधे हिस्से से होते हुए ऊपर तक चढ़ते हैं, फिर सबसे ऊपर की कतारों के साथ-साथ बाहर निकलने वाले खाने तक जाते हैं। लाल बिंदु बगल के गलियारों में फैले हैं, ज़्यादातर भूलभुलैया के दाएँ आधे हिस्से में और कुछ बाईं ओर।",
+      "sketch_caption": "परिशा की हाथ से बनाई भूलभुलैया और संकेत-सूची।",
+      "trace_caption": "लेवल 4 में इस्तेमाल होने वाला नक्शा, जो उनके चित्र को 10 बाय 10 के ग्रिड पर उतारकर बना है। उनके चित्र की तरह यह भी नीचे बाईं ओर से शुरू होता है और ऊपर दाईं ओर बाहर निकलता है। हरे बिंदु वहाँ हैं जहाँ उन्होंने हरे बिंदु बनाए थे, और लाल क्रॉस वहाँ जहाँ उन्होंने लाल बिंदु बनाए थे।",
+      "trace_notes": [
+        "शुरुआत से हर खाने तक पहुँचा जा सकता है।",
+        "सबसे छोटा रास्ता 30 कदम का है और छह दोराहों से होकर गुज़रता है।",
+        "उनके 14 हरे बिंदुओं में से 13 सबसे छोटे रास्ते पर पड़ते हैं। उनके 25 लाल बिंदुओं में से 24 उस रास्ते से बाहर पड़ते हैं।",
+        "एक हरा बिंदु रास्ते से बस एक दीवार के उस पार है।",
+        "एक लाल बिंदु रास्ते पर ही है, बाहर निकलने की जगह के बगल वाले खाने में, जहाँ से एक बंद गली अलग होती है।"
+      ]
+    },
+    "play": {
+      "heading": "ब्राउज़र डेमो",
+      "text": "यह डेमो साउंड मेज़ का आवाज़ वाला हिस्सा है, जो ब्राउज़र में कीबोर्ड से खेला जाता है। हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं। लेवल 1 में एक ही रास्ता है, कोई दोराहा नहीं। लेवल 2 में दो दोराहे जुड़ते हैं, और Shift के साथ कोई ऐरो दबाकर आप किसी रास्ते की आवाज़ सुन सकते हैं। लेवल 3 में शुरू करने से पहले आप रास्ता धुनों में सुनते हैं। लेवल 4 परिशा की भूलभुलैया है। खेलते समय स्क्रीन कोरे काग़ज़ की तरह ख़ाली रहती है। बाहर निकलने पर भूलभुलैया स्याही से बनी दिखाई देती है, और उस पर आपके कदमों के निशान होते हैं: सबसे छोटे रास्ते पर हरे बिंदु और उससे हटकर लाल क्रॉस। हर नई आवाज़ अंग्रेज़ी या हिंदी में एक बार बोलकर समझाई जाती है, दीवार से टकराने पर नैरेटर बोलकर बताता है, और लेवल के आख़िर में आपके नतीजे बोलकर सुनाए जाते हैं।",
+      "button": "भूलभुलैया खेलिए"
+    },
+    "footer": {
+      "made_by": "साउंड मेज़ परिशा जैन का एक डिज़ाइन प्रोजेक्ट है।",
+      "sources_heading": "स्रोत",
+      "translation_note": "ये जवाब परिशा के इंटरव्यू के अंग्रेज़ी लिखित रिकॉर्ड से हिंदी में अनुवाद किए गए हैं। अनुवाद में बात का मतलब वही रखा गया है, पर शब्द हूबहू नहीं हैं। मूल शब्द अंग्रेज़ी पेज पर हैं।"
+    }
+  }
+}

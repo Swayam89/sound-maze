@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>साउंड मेज़ खेलिए</title>
+<meta name="description" content="चार भूलभुलैया, जिनमें सुनकर रास्ता ढूँढना है। नई आवाज़ें थोड़ी-थोड़ी करके सिखाई जाती हैं।">
+<meta name="author" content="Parisha Jain">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../img/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&amp;family=Mukta:wght@400;600;800&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&amp;family=Mukta:wght@400;600;800&amp;display=swap"></noscript>
+<meta property="og:type" content="website">
+<meta property="og:title" content="साउंड मेज़ खेलिए">
+<meta property="og:description" content="चार भूलभुलैया, जिनमें सुनकर रास्ता ढूँढना है। नई आवाज़ें थोड़ी-थोड़ी करके सिखाई जाती हैं।">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../css/style.css?v=4b7cf257">
+<script type="importmap">{"imports":{"../../js/maze.js":"../../js/maze.js?v=e5c2ad19","../../js/levels.js":"../../js/levels.js?v=8637fc78","../../js/audio.js":"../../js/audio.js?v=1b7dc56c","../../js/draw.js":"../../js/draw.js?v=19b04712","../../js/game.js":"../../js/game.js?v=20189c57","../../js/site.js":"../../js/site.js?v=661138ca"}}</script>
+<script type="module" src="../../js/game.js?v=20189c57"></script>
+</head>
+<body class="game">
+<header class="site-header">
+  <a class="site-name" href="../../hi/">प्रोजेक्ट पर वापस जाइए</a>
+  <a class="lang-switch" href="../../play/" lang="en" hreflang="en">Play in English</a>
+</header>
+<main id="main">
+  <p class="notice" id="no-keyboard" hidden>यह खेल कीबोर्ड से खेला जाता है। खेलने के लिए यह पेज लैपटॉप या डेस्कटॉप कंप्यूटर पर खोलिए। <a href="../../hi/">इसके बजाय प्रोजेक्ट के बारे में पढ़िए</a></p>
+  <p class="notice" id="voice-failed" hidden>बोलने वाली आवाज़ लोड नहीं हुई, इसलिए निर्देश लिखकर दिखेंगे। खेल की आवाज़ें फिर भी काम करती हैं। <button class="button button--small button--line" id="voice-retry" type="button">बोलने वाली आवाज़ फिर से लोड कीजिए</button></p>
+  <button class="button" id="audio-resume" type="button" hidden>आवाज़ फिर से चालू कीजिए</button>
+
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <div>
+      <h1 id="menu-title" tabindex="-1">Sound Maze</h1>
+      <p class="intro">चार भूलभुलैया, जिनमें सुनकर रास्ता ढूँढना है। नई आवाज़ें थोड़ी-थोड़ी करके सिखाई जाती हैं।</p>
+      <p>हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं।</p>
+    </div>
+
+    <section aria-labelledby="levels-heading">
+      <h2 id="levels-heading">लेवल</h2>
+      <ol class="levels">
+        <li><button class="level-button" type="button" data-level="0">
+          <span class="n">लेवल 1</span>
+          <span class="name">कदम और दीवारें</span>
+          <span class="desc">एक ही रास्ता, कोई दोराहा नहीं। कदम और दीवार की आवाज़ पहचानना सीखिए।</span>
+          <span class="go">लेवल 1 खेलिए</span>
+        </button></li>
+        <li><button class="level-button" type="button" data-level="1">
+          <span class="n">लेवल 2</span>
+          <span class="name">नरम और कर्कश</span>
+          <span class="desc">दो दोराहे। चुनने से पहले सुनिए।</span>
+          <span class="go">लेवल 2 खेलिए</span>
+        </button></li>
+        <li><button class="level-button" type="button" data-level="2">
+          <span class="n">लेवल 3</span>
+          <span class="name">रास्ता याद रखिए</span>
+          <span class="desc">रास्ता धुनों में सुनिए, फिर याद के सहारे उस पर चलिए।</span>
+          <span class="go">लेवल 3 खेलिए</span>
+        </button></li>
+        <li><button class="level-button" type="button" data-level="3">
+          <span class="n">लेवल 4</span>
+          <span class="name">परिशा की भूलभुलैया</span>
+          <span class="desc">उनकी हाथ से बनाई भूलभुलैया, 10 बाय 10 खानों की। पहले तीन दोराहे याद के सहारे, फिर चार बार सुन सकते हैं।</span>
+          <span class="go">लेवल 4 खेलिए</span>
+        </button></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="controls-heading">
+      <h2 id="controls-heading">कंट्रोल</h2>
+      <dl class="controls">
+        <dt>ऐरो कीज़</dt><dd>एक खाना चलिए</dd>
+        <dt>Shift के साथ ऐरो</dt><dd>किसी रास्ते की आवाज़ सुनिए (लेवल 2 से 4)</dd>
+        <dt><kbd>R</kbd></dt><dd>रास्ता दोबारा सुनिए, या पिछली आवाज़</dd>
+        <dt><kbd>H</kbd></dt><dd>कंट्रोल सुनिए</dd>
+        <dt><kbd>Esc</kbd></dt><dd>खेल रोकिए</dd>
+        <dt><kbd>Enter</kbd></dt><dd>बोला जा रहा परिचय छोड़िए</dd>
+      </dl>
+      <p class="sr-note">स्क्रीन रीडर इस्तेमाल करने वालों के लिए: खेलते समय ऐरो कीज़ भूलभुलैया में चलने के काम आती हैं। NVDA में अगर ऐरो दबाने पर आप आगे नहीं बढ़ते, तो फ़ोकस मोड पर जाने के लिए NVDA और Space दबाइए।</p>
+    </section>
+
+    <section aria-labelledby="sounds-heading">
+      <h2 id="sounds-heading">आवाज़ें</h2>
+      <p>हर आवाज़ का एक ही मतलब है, और हर लेवल में वही मतलब रहता है।</p>
+      <ul class="sound-list">
+  <li><button class="button button--small button--line" type="button" data-sound="step" aria-describedby="sound-step">सुनिए<span class="visually-hidden"> कदम</span></button>
+    <span class="name">कदम</span>
+    <span class="meaning" id="sound-step">आप एक खाना चले।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="wall" aria-describedby="sound-wall">सुनिए<span class="visually-hidden"> दीवार</span></button>
+    <span class="name">दीवार</span>
+    <span class="meaning" id="sound-wall">उस तरफ़ दीवार है। आप आगे नहीं बढ़े।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="fork" aria-describedby="sound-fork">सुनिए<span class="visually-hidden"> दोराहा</span></button>
+    <span class="name">दोराहा</span>
+    <span class="meaning" id="sound-fork">यहाँ से एक से ज़्यादा रास्ते खुले हैं।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="soft" aria-describedby="sound-soft">सुनिए<span class="visually-hidden"> नरम</span></button>
+    <span class="name">नरम</span>
+    <span class="meaning" id="sound-soft">किसी रास्ते की आवाज़ सुनने पर यह आए, तो वह रास्ता बाहर ले जाता है।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="harsh" aria-describedby="sound-harsh">सुनिए<span class="visually-hidden"> कर्कश</span></button>
+    <span class="name">कर्कश</span>
+    <span class="meaning" id="sound-harsh">किसी रास्ते की आवाज़ सुनने पर यह आए, तो वह रास्ता बाहर नहीं ले जाता।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="exit" aria-describedby="sound-exit">सुनिए<span class="visually-hidden"> बाहर का रास्ता</span></button>
+    <span class="name">बाहर का रास्ता</span>
+    <span class="meaning" id="sound-exit">आपको बाहर का रास्ता मिल गया।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="up" aria-describedby="sound-up">सुनिए<span class="visually-hidden"> ऊपर</span></button>
+    <span class="name">ऊपर</span>
+    <span class="meaning" id="sound-up">रास्ते की धुन: ऊँचा सुर।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="down" aria-describedby="sound-down">सुनिए<span class="visually-hidden"> नीचे</span></button>
+    <span class="name">नीचे</span>
+    <span class="meaning" id="sound-down">रास्ते की धुन: नीचा सुर।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="left" aria-describedby="sound-left">सुनिए<span class="visually-hidden"> बाएँ</span></button>
+    <span class="name">बाएँ</span>
+    <span class="meaning" id="sound-left">रास्ते की धुन: बाईं ओर से दो छोटे सुर।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="right" aria-describedby="sound-right">सुनिए<span class="visually-hidden"> दाएँ</span></button>
+    <span class="name">दाएँ</span>
+    <span class="meaning" id="sound-right">रास्ते की धुन: दाईं ओर से एक लंबा सुर।</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="empty" aria-describedby="sound-empty">सुनिए<span class="visually-hidden"> सुनने के मौके ख़त्म</span></button>
+    <span class="name">सुनने के मौके ख़त्म</span>
+    <span class="meaning" id="sound-empty">इस लेवल में आप सुनने के सारे मौके इस्तेमाल कर चुके हैं।</span></li>
+</ul>
+      <p><button class="button button--line" id="sound-check" type="button">बाएँ-दाएँ की जाँच कीजिए</button></p>
+      <p id="sound-check-says" aria-live="polite"></p>
+    </section>
+  </section>
+
+  <section class="stage" id="stage" hidden aria-labelledby="stage-title">
+    <h1 class="visually-hidden" id="stage-title">Sound Maze</h1>
+    <p class="paper-note">खेलते समय भूलभुलैया छिपी रहती है। बाहर निकलने पर आप उसे देख पाएँगे।</p>
+    <div class="board" id="board" role="application" tabindex="0" aria-label="">
+      <p class="caption" id="caption" aria-hidden="true"></p>
+    </div>
+    <p class="status"><span id="status-level"></span><span id="status-listens"></span><span id="status-steps"></span><span class="hint" id="status-hint"></span></p>
+  </section>
+
+  <section class="result" id="result" hidden aria-labelledby="result-title">
+    <h1 id="result-title" tabindex="-1"></h1>
+    <div class="result-grid">
+      <div class="reveal-pair">
+        <figure class="reveal">
+          <div id="reveal"></div>
+          <figcaption class="figure-note">वह भूलभुलैया जिससे आप अभी गुज़रे। हरे बिंदु सबसे छोटे रास्ते पर पड़े आपके कदम दिखाते हैं, और लाल क्रॉस उस रास्ते से हटकर पड़े कदम।</figcaption>
+        </figure>
+        <figure id="reveal-sketch" hidden>
+          <img src="../../img/sketch-maze.png" width="900" height="900" alt="परिशा की हाथ से बनाई भूलभुलैया: मोटी काली रेखाओं का एक चौकोर, जिसमें बाहर जाने वाले रास्ते पर 14 हरे बिंदु हैं और बगल के रास्तों में 25 लाल बिंदु। अंदर आने का रास्ता नीचे बाईं ओर है और बाहर का रास्ता ऊपर दाईं ओर।">
+          <figcaption class="figure-note">इसी भूलभुलैया का परिशा का बनाया चित्र, उनके लाल और हरे बिंदुओं के साथ।</figcaption>
+        </figure>
+      </div>
+      <div class="result-side">
+        <p class="score-line"><span>स्कोर</span> <strong id="score"></strong></p>
+        <p class="best" id="best"></p>
+        <dl class="stats" id="stats"></dl>
+        <p class="score-rule">100 में से। सबसे छोटे रास्ते से ज़्यादा हर कदम पर 1 अंक कटता है (ज़्यादा से ज़्यादा 40), सुनने का हर मौका इस्तेमाल करने पर 4, और हर बार रास्ता दोबारा सुनने पर 2। दीवार से टकराने पर कोई अंक नहीं कटता।</p>
+        <p class="caption caption--result" id="result-caption" aria-hidden="true"></p>
+        <p id="all-done" hidden>यह आख़िरी लेवल था।</p>
+        <div class="actions">
+          <button class="button" id="next" type="button">अगला लेवल</button>
+          <button class="button button--line" id="again" type="button">यह लेवल फिर से खेलिए</button>
+          <button class="button button--line" id="result-to-levels" type="button">लेवल की सूची पर लौटिए</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="pause" id="pause" aria-labelledby="pause-heading">
+    <h2 id="pause-heading">खेल रुका है</h2>
+    <div class="actions">
+      <button class="button" id="resume" type="button">खेल जारी रखिए</button>
+      <button class="button button--line" id="restart" type="button">यह लेवल फिर से शुरू कीजिए</button>
+      <button class="button button--line" id="skip-level" type="button">अगले लेवल पर जाइए</button>
+      <button class="button button--line" id="pause-to-levels" type="button">लेवल की सूची पर लौटिए</button>
+    </div>
+    <fieldset>
+      <label>खेल की आवाज़ों का वॉल्यूम<input id="volume-sounds" type="range" min="0" max="100" value="80"></label>
+      <label>बोलने वाली आवाज़ का वॉल्यूम<input id="volume-voice" type="range" min="0" max="100" value="90"></label>
+      <label class="check"><input id="mono" type="checkbox"> मोनो: दोनों कानों में एक जैसी आवाज़</label>
+    </fieldset>
+  </dialog>
+
+  <div id="live" class="visually-hidden" aria-live="polite"></div>
+</main>
+<script type="application/json" id="strings">{"ui":{"page_title":"साउंड मेज़ खेलिए","back":"प्रोजेक्ट पर वापस जाइए","lang_switch":"Play in English","intro":"चार भूलभुलैया, जिनमें सुनकर रास्ता ढूँढना है। नई आवाज़ें थोड़ी-थोड़ी करके सिखाई जाती हैं।","headphones":"हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं।","keyboard_only":"यह खेल कीबोर्ड से खेला जाता है। खेलने के लिए यह पेज लैपटॉप या डेस्कटॉप कंप्यूटर पर खोलिए।","keyboard_only_link":"इसके बजाय प्रोजेक्ट के बारे में पढ़िए","controls_heading":"कंट्रोल","key_move":"ऐरो कीज़","key_move_desc":"एक खाना चलिए","key_listen":"Shift के साथ ऐरो","key_listen_desc":"किसी रास्ते की आवाज़ सुनिए (लेवल 2 से 4)","key_repeat":"R","key_repeat_desc":"रास्ता दोबारा सुनिए, या पिछली आवाज़","key_help":"H","key_help_desc":"कंट्रोल सुनिए","key_pause":"Esc","key_pause_desc":"खेल रोकिए","key_skip":"Enter","key_skip_desc":"बोला जा रहा परिचय छोड़िए","screen_reader_note":"स्क्रीन रीडर इस्तेमाल करने वालों के लिए: खेलते समय ऐरो कीज़ भूलभुलैया में चलने के काम आती हैं। NVDA में अगर ऐरो दबाने पर आप आगे नहीं बढ़ते, तो फ़ोकस मोड पर जाने के लिए NVDA और Space दबाइए।","levels_heading":"लेवल","level_1_name":"कदम और दीवारें","level_1_desc":"एक ही रास्ता, कोई दोराहा नहीं। कदम और दीवार की आवाज़ पहचानना सीखिए।","level_2_name":"नरम और कर्कश","level_2_desc":"दो दोराहे। चुनने से पहले सुनिए।","level_3_name":"रास्ता याद रखिए","level_3_desc":"रास्ता धुनों में सुनिए, फिर याद के सहारे उस पर चलिए।","level_4_name":"परिशा की भूलभुलैया","level_4_desc":"उनकी हाथ से बनाई भूलभुलैया, 10 बाय 10 खानों की। पहले तीन दोराहे याद के सहारे, फिर चार बार सुन सकते हैं।","level_play":"लेवल {n} खेलिए","sounds_heading":"आवाज़ें","sounds_intro":"हर आवाज़ का एक ही मतलब है, और हर लेवल में वही मतलब रहता है।","sound_play":"सुनिए","sound_step_name":"कदम","sound_step_meaning":"आप एक खाना चले।","sound_wall_name":"दीवार","sound_wall_meaning":"उस तरफ़ दीवार है। आप आगे नहीं बढ़े।","sound_fork_name":"दोराहा","sound_fork_meaning":"यहाँ से एक से ज़्यादा रास्ते खुले हैं।","sound_soft_name":"नरम","sound_soft_meaning":"किसी रास्ते की आवाज़ सुनने पर यह आए, तो वह रास्ता बाहर ले जाता है।","sound_harsh_name":"कर्कश","sound_harsh_meaning":"किसी रास्ते की आवाज़ सुनने पर यह आए, तो वह रास्ता बाहर नहीं ले जाता।","sound_exit_name":"बाहर का रास्ता","sound_exit_meaning":"आपको बाहर का रास्ता मिल गया।","sound_up_name":"ऊपर","sound_up_meaning":"रास्ते की धुन: ऊँचा सुर।","sound_down_name":"नीचे","sound_down_meaning":"रास्ते की धुन: नीचा सुर।","sound_left_name":"बाएँ","sound_left_meaning":"रास्ते की धुन: बाईं ओर से दो छोटे सुर।","sound_right_name":"दाएँ","sound_right_meaning":"रास्ते की धुन: दाईं ओर से एक लंबा सुर।","sound_empty_name":"सुनने के मौके ख़त्म","sound_empty_meaning":"इस लेवल में आप सुनने के सारे मौके इस्तेमाल कर चुके हैं।","sound_check":"बाएँ-दाएँ की जाँच कीजिए","sound_check_left":"यह कदम आपको बाईं ओर से सुनाई देना चाहिए।","sound_check_right":"यह कदम आपको दाईं ओर से सुनाई देना चाहिए।","status_level":"लेवल {n}","status_listens":"सुनने के बचे मौके: {n}","status_steps":"कदम: {n}","status_hint":"मदद के लिए H, खेल रोकने के लिए Esc।","status_skip":"परिचय छोड़ने के लिए Enter दबाइए।","paper_note":"खेलते समय भूलभुलैया छिपी रहती है। बाहर निकलने पर आप उसे देख पाएँगे।","pause_heading":"खेल रुका है","resume":"खेल जारी रखिए","restart":"यह लेवल फिर से शुरू कीजिए","skip_level":"अगले लेवल पर जाइए","to_levels":"लेवल की सूची पर लौटिए","volume_sounds":"खेल की आवाज़ों का वॉल्यूम","volume_voice":"बोलने वाली आवाज़ का वॉल्यूम","mono":"मोनो: दोनों कानों में एक जैसी आवाज़","result_heading":"आप लेवल {n} की भूलभुलैया से बाहर निकल आए","stat_steps":"कितने कदम चले","stat_shortest":"सबसे छोटा रास्ता","stat_listens":"सुनने के कितने मौके इस्तेमाल किए","stat_replays":"रास्ता कितनी बार दोबारा सुना","stat_walls":"कितनी बार दीवार से टकराए","stat_time":"समय","score_label":"स्कोर","score_rule":"100 में से। सबसे छोटे रास्ते से ज़्यादा हर कदम पर 1 अंक कटता है (ज़्यादा से ज़्यादा 40), सुनने का हर मौका इस्तेमाल करने पर 4, और हर बार रास्ता दोबारा सुनने पर 2। दीवार से टकराने पर कोई अंक नहीं कटता।","reveal_caption":"वह भूलभुलैया जिससे आप अभी गुज़रे। हरे बिंदु सबसे छोटे रास्ते पर पड़े आपके कदम दिखाते हैं, और लाल क्रॉस उस रास्ते से हटकर पड़े कदम।","reveal_sketch_caption":"इसी भूलभुलैया का परिशा का बनाया चित्र, उनके लाल और हरे बिंदुओं के साथ।","next_level":"अगला लेवल","play_again":"यह लेवल फिर से खेलिए","all_done":"यह आख़िरी लेवल था।","load_error":"बोलने वाली आवाज़ लोड नहीं हुई, इसलिए निर्देश लिखकर दिखेंगे। खेल की आवाज़ें फिर भी काम करती हैं।","retry":"बोलने वाली आवाज़ फिर से लोड कीजिए","audio_blocked":"आवाज़ फिर से चालू कीजिए","minutes_seconds":"{m} मिनट {s} सेकंड","seconds":"{s} सेकंड","best_on_device":"इस डिवाइस पर आपका सबसे अच्छा स्कोर: {n}","decision_from":"शोध से","decision_to":"डेमो में","description_label":"चित्र का विवरण पढ़िए","access_heading":"इसे कौन खेल सकता है","access_note":"यह डेमो सुनकर खेला जाता है, इसलिए कम से कम एक कान से सुन पाना ज़रूरी है। अगर आप एक ही कान से सुनते हैं, तो खेल रोककर मोनो चालू कीजिए। जो कुछ भी बोलकर बताया जाता है, वह स्क्रीन पर भी लिखा दिखता है। यह डेमो कीबोर्ड से खेला जाता है, इसलिए अभी फ़ोन पर नहीं चलता। अभी तक इसे दृष्टिहीन या दृष्टिबाधित खिलाड़ियों के साथ परखा नहीं गया है।","sketch_maze_alt":"परिशा की हाथ से बनाई भूलभुलैया: मोटी काली रेखाओं का एक चौकोर, जिसमें बाहर जाने वाले रास्ते पर 14 हरे बिंदु हैं और बगल के रास्तों में 25 लाल बिंदु। अंदर आने का रास्ता नीचे बाईं ओर है और बाहर का रास्ता ऊपर दाईं ओर।","typefaces":"अंग्रेज़ी के लिए Atkinson Hyperlegible Next फ़ॉन्ट, जिसे Braille Institute ने कम दृष्टि वाले पाठकों के लिए बनाया है, और हिंदी के लिए Ek Type का Mukta फ़ॉन्ट।"},"voice":{"welcome":"साउंड मेज़। हर भूलभुलैया में आपको आवाज़ के सहारे रास्ता ढूँढना है। हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं।","l1_title":"पहला लेवल। कदम और दीवारें।","teach_step":"हर कदम पर ऐसी आवाज़ आती है।","teach_wall":"दीवार से टकराने पर यह आवाज़ आती है।","teach_exit":"और इसका मतलब है कि आपको बाहर का रास्ता मिल गया।","l1_go":"ऐरो कीज़ से चलिए। आप हमेशा नीचे बाईं ओर से शुरू करते हैं, और बाहर का रास्ता हमेशा ऊपर दाईं ओर होता है।","l2_title":"दूसरा लेवल। नरम और कर्कश।","teach_fork":"इस आवाज़ का मतलब है कि आप दोराहे पर हैं, जहाँ से एक से ज़्यादा रास्ते खुले हैं।","teach_listen":"किसी रास्ते पर जाने से पहले उसकी आवाज़ सुनने के लिए Shift दबाकर रखिए और उस तरफ़ का ऐरो दबाइए।","teach_soft":"नरम और मुलायम आवाज़। यह रास्ता बाहर ले जाता है।","teach_harsh":"कर्कश आवाज़। यह रास्ता बाहर नहीं ले जाता।","l2_go":"आप चार बार सुन सकते हैं। ये मौके दोराहों के लिए बचाकर रखिए।","l3_title":"तीसरा लेवल। रास्ता याद रखिए।","teach_dirs":"हर दिशा की अपनी धुन है।","dir_up":"ऊपर: ऊँचा सुर।","dir_down":"नीचे: नीचा सुर।","dir_left":"बाएँ: दो छोटे सुर।","dir_right":"दाएँ: एक लंबा सुर।","teach_route":"शुरू करने से पहले आप क्रम से सुनेंगे कि हर दोराहे पर किस तरफ़ जाना है। दोबारा सुनने के लिए R दबाइए।","l4_title":"चौथा लेवल। परिशा की भूलभुलैया।","l4_intro":"यह भूलभुलैया परिशा जैन ने हाथ से बनाई है। यह दस खाने चौड़ी और दस खाने लंबी है। आप पहले तीन दोराहों का रास्ता सुनेंगे। उसके बाद आप चार बार सुन सकते हैं।","route_here":"यह रहा रास्ता।","go":"चलिए।","no_listens":"सुनने के मौके ख़त्म हो गए।","help":"ऐरो कीज़ से चलिए। Shift के साथ कोई ऐरो दबाने पर उस तरफ़ के रास्ते की आवाज़ सुनाई देती है। R से दोहराइए। Escape से खेल रोकिए।","paused":"खेल रुका है।","out":"अरे, आपको बाहर का रास्ता मिल गया!","score":"स्कोर:","next":"अगले लेवल के लिए Enter दबाइए।","all_done":"यह आख़िरी लेवल था। शुरुआत पर लौटने के लिए Enter दबाइए।","wall_1":"अरे, आप दीवार से टकरा गए।","wall_2":"यह दीवार है।","wall_3":"उधर दीवार है।"}}</script>
+</body>
+</html>

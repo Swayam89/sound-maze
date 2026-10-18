@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sound Maze by Parisha Jain</title>
+<meta name="description" content="Sound Maze is a maze game played by sound and touch, designed by Parisha Jain. Read her research and play the four-level browser demo.">
+<meta name="author" content="Parisha Jain">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&amp;family=Mukta:wght@400;600;800&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&amp;family=Mukta:wght@400;600;800&amp;display=swap"></noscript>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sound Maze by Parisha Jain">
+<meta property="og:description" content="Sound Maze is a maze game played by sound and touch, designed by Parisha Jain. Read her research and play the four-level browser demo.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css?v=4b7cf257">
+<script type="importmap">{"imports":{"./js/maze.js":"./js/maze.js?v=e5c2ad19","./js/levels.js":"./js/levels.js?v=8637fc78","./js/audio.js":"./js/audio.js?v=1b7dc56c","./js/draw.js":"./js/draw.js?v=19b04712","./js/game.js":"./js/game.js?v=20189c57","./js/site.js":"./js/site.js?v=661138ca"}}</script>
+<script type="module" src="js/site.js?v=661138ca"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="site-name" href="./">Sound Maze</a>
+  <nav class="site-nav" aria-label="Sections">
+    <ul>
+      <li><a href="#idea">Idea</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#sounds">Sounds</a></li>
+      <li><a href="#maze">Maze</a></li>
+      <li><a href="play/">Play</a></li>
+    </ul>
+  </nav>
+  <a class="lang-switch" href="hi/" lang="hi" hreflang="hi">हिन्दी</a>
+</header>
+
+<main id="main" class="page">
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <h1 id="title">Sound Maze</h1>
+      <p class="lede">A maze game you solve by sound and touch. Parisha's design pairs a tactile maze and a game piece with a sound language. The demo on this site is the sound part, played in a browser.</p>
+      <p class="byline">A design project by Parisha Jain</p>
+      <p class="actions">
+        <a class="button" href="play/">Play the maze</a>
+        <a class="button button--line" href="#sounds">Hear the sounds</a>
+        <span class="play-note">Played with a keyboard. Headphones help, but speakers work too.</span>
+      </p>
+    </div>
+    <figure class="sketch">
+      <img src="img/sketch.png" width="1600" height="1131" alt="Parisha's hand-drawn square maze in thick black lines, with red and green dots inside and a handwritten key on the left. A full description follows.">
+      <figcaption>Parisha's hand-drawn maze and key.</figcaption>
+    </figure>
+  </section>
+
+  <hr class="wall" style="--gap: 62%">
+
+  <section class="section" id="idea" aria-labelledby="idea-heading">
+    <h2 id="idea-heading">The idea</h2>
+    <div class="prose"><p>Sound Maze is a multisensory navigation game that challenges players to understand and navigate a physical space without relying on vision. The game explores how sound, touch and spatial memory can work together to create an understanding of space.</p>
+<p>The player moves a physical game piece through a tactile maze or grid. Information about the route comes through sound mapping: different sounds give different spatial instructions, such as direction, movement, obstacles, distance and destination. The player has to listen, interpret, remember and navigate the maze by touch.</p>
+<p>The game introduces players to its own sound language gradually. A high-pitched tone might indicate one direction, a low tone another, while combinations, rhythms or changes in pitch can communicate turns, obstacles or movement. As the levels progress, players have to remember increasingly complex sound sequences and translate them into physical movement.</p>
+<p>Touch gives the space a physical form. In the tactile maze, players feel pathways, boundaries, textures and obstacles. Advanced versions of the game could also use vibration, temperature, airflow or scent.</p>
+<p>Reaching the end of the maze is the player's goal. The project's goal is to explore how people build mental maps when visual information is removed.</p></div>
+  </section>
+
+  <section class="section" aria-labelledby="question-heading">
+    <h2 id="question-heading">The research question</h2>
+    <p class="question-text">How can sound mapping and tactile feedback be used to communicate space, direction and navigation through a multisensory game?</p>
+    <div class="columns">
+      <div class="prose">
+        <h3 class="subheading">Objectives</h3>
+        <ul class="plain-list"><li>Explore sound as a tool for communicating spatial information.</li><li>Understand how people interpret and remember auditory cues.</li><li>Develop a tactile system that complements sound-based navigation.</li><li>Create an engaging game rather than a purely functional accessibility tool.</li><li>Explore how removing vision changes spatial awareness, memory and decision-making.</li><li>Design a game that both visually impaired and sighted players can play.</li></ul>
+      </div>
+      <div class="prose">
+        <h3 class="subheading">Target audience</h3>
+        <p>Aged 18 to 35.</p>
+<p>Visually impaired people who are old enough to understand and independently play a physical game.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="wall" style="--gap: 18%">
+
+  <section class="section" id="research" aria-labelledby="people-heading">
+    <h2 id="people-heading">Seven participants</h2>
+    <div class="prose"><p>Parisha interviewed seven people aged 18 to 30, all blind or visually impaired.</p></div>
+    <ul class="people">
+      <li class="person"><h3>Mysha <span class="age">18 years old</span></h3><p>She has a rare genetic condition that stops the body from making enough melanin, the natural chemical that gives colour to the skin, hair and eyes. She has 45% vision.</p></li>
+      <li class="person"><h3>Shruti <span class="age">20 years old</span></h3><p>She has low vision and can perceive light, shapes and large objects, but struggles with small details and with navigating unfamiliar environments. She relies on a combination of touch, environmental sounds and memory when moving through new spaces. She enjoys interactive activities and is comfortable learning new systems.</p></li>
+      <li class="person"><h3>Rohan <span class="age">23 years old</span></h3><p>He has severe visual impairment and primarily relies on auditory and tactile information. He uses a cane for navigation and is particularly aware of environmental sounds such as traffic, footsteps, voices and echoes. He has experience with audio-based games and enjoys activities that involve problem-solving.</p></li>
+      <li class="person"><h3>Vedant <span class="age">21 years old</span></h3><p>He has limited functional vision and relies heavily on touch and sound in unfamiliar environments. He tends to remember spaces as a sequence of movements rather than as a visual map. He is interested in technology and games, and would be suitable for testing how easily a new sound language can be learned.</p></li>
+      <li class="person"><h3>Arjun <span class="age">24 years old</span></h3><p>He is blind and navigates familiar and unfamiliar spaces independently, using a cane, auditory cues and tactile landmarks. He remembers routes through sequences and physical landmarks. He enjoys games that involve strategy and decision-making, where he isn't simply following instructions.</p></li>
+      <li class="person"><h3>Suddha <span class="age">30 years old</span></h3><p>She has partial vision and can distinguish light, colour and broad shapes, but cannot reliably identify fine visual details. She frequently uses sound and touch to supplement her remaining vision. She enjoys social games and activities involving memory, and would provide useful insight into the entertainment side of Sound Maze.</p></li>
+      <li class="person"><h3>Devam <span class="age">21 years old</span></h3><p>He has severe visual impairment and primarily uses auditory, tactile and environmental cues to navigate. He is particularly comfortable identifying the direction and source of sounds and remembering sensory landmarks. He has experience using accessibility-focused technology and can give detailed feedback on whether the game's sound system feels intuitive or overly complicated.</p></li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="interviews-heading">
+    <h2 id="interviews-heading">Interview answers</h2>
+    <div class="prose"><p>Answers from six of the seven participants, grouped under Parisha's six questions and quoted word for word from her transcripts. Shruti's answers are not in the transcripts.</p></div>
+    <section class="interview">
+      <h3>How do you usually navigate or understand an unfamiliar space?</h3>
+      <ul class="answers">
+        <li><blockquote><p>I usually depend on sounds around me and landmarks that I can remember. I try to understand the direction of a place by noticing where sounds are coming from and counting steps or turns.</p></blockquote><p class="who">Mysha</p></li>
+        <li><blockquote><p>I first try to understand the layout through directions and then remember specific points. I also use my cane to understand what's around me.</p></blockquote><p class="who">Rohan</p></li>
+        <li><blockquote><p>I listen to what's happening around me and try to build an idea of the space in my head. I also use touch to understand where objects and boundaries are.</p></blockquote><p class="who">Vedant</p></li>
+        <li><blockquote><p>I usually explore it slowly first. I use my cane and listen to the sounds around me to understand the surroundings.</p></blockquote><p class="who">Arjun</p></li>
+        <li><blockquote><p>I try to create a mental picture based on sounds and touch. I also remember distances by counting steps sometimes.</p></blockquote><p class="who">Suddha</p></li>
+        <li><blockquote><p>I use a combination of my cane, sound and memory. I first try to understand the general direction and then focus on smaller details.</p></blockquote><p class="who">Devam</p></li>
+      </ul>
+    </section>
+    <section class="interview">
+      <h3>What kinds of sounds or environmental cues help you understand where you are or where you need to go?</h3>
+      <ul class="answers">
+        <li><blockquote><p>Traffic, people talking, doors opening, footsteps and changes in background noise are helpful. Sometimes I can tell if I am near a road or an open space just from the sound.</p></blockquote><p class="who">Mysha</p></li>
+        <li><blockquote><p>Echoes are useful. If I'm in a large open area, the sound feels different compared to a small room. Voices and traffic are also good indicators.</p></blockquote><p class="who">Rohan</p></li>
+        <li><blockquote><p>Human voices are probably the most useful because they help me understand where people are. Traffic sounds are also very important outside.</p></blockquote><p class="who">Vedant</p></li>
+        <li><blockquote><p>Sounds that are consistent are helpful. For example, a fan, a road, a staircase or a person's voice can become a landmark.</p></blockquote><p class="who">Arjun</p></li>
+        <li><blockquote><p>Different sounds help me understand different environments. For example, I can recognise a busy road because of the traffic and horns.</p></blockquote><p class="who">Suddha</p></li>
+        <li><blockquote><p>Sounds that have a clear direction are useful. I can usually tell when something is coming from the left or right, especially if it is close.</p></blockquote><p class="who">Devam</p></li>
+      </ul>
+    </section>
+    <section class="interview">
+      <h3>How do you remember a route or the layout of a place?</h3>
+      <ul class="answers">
+        <li><blockquote><p>I remember it in parts — like straight, turn left, stairs, then another turn. I don't really remember it as a complete map.</p></blockquote><p class="who">Mysha</p></li>
+        <li><blockquote><p>I remember the number of turns and important points. For example, walk straight for some time, turn right after a door and then there are stairs.</p></blockquote><p class="who">Rohan</p></li>
+        <li><blockquote><p>I remember routes like a sequence. I don't think of it visually. It's more like remembering instructions.</p></blockquote><p class="who">Vedant</p></li>
+        <li><blockquote><p>I remember important landmarks rather than every single turn. If there are too many turns, I need to repeat the route.</p></blockquote><p class="who">Arjun</p></li>
+        <li><blockquote><p>I remember it as a story or sequence — first this happens, then I turn, then there is a particular sound or object.</p></blockquote><p class="who">Suddha</p></li>
+        <li><blockquote><p>I remember the sequence of movements and certain sensory landmarks. If a place has a unique sound or texture, it becomes easier to remember.</p></blockquote><p class="who">Devam</p></li>
+      </ul>
+    </section>
+    <section class="interview">
+      <h3>When using touch to understand your surroundings, what kinds of textures or shapes are easiest for you to distinguish?</h3>
+      <ul class="answers">
+        <li><blockquote><p>Textures that are very different from each other. For example, a smooth surface and a rough surface are easy to identify. Small differences can be confusing.</p></blockquote><p class="who">Mysha</p></li>
+        <li><blockquote><p>Raised shapes and clear patterns are easiest. If two textures are too similar, I won't be able to distinguish them quickly.</p></blockquote><p class="who">Rohan</p></li>
+        <li><blockquote><p>Shapes with a strong difference are easier. Raised lines, dots and grooves are quite easy to understand.</p></blockquote><p class="who">Vedant</p></li>
+        <li><blockquote><p>Simple raised patterns are easiest. A line, circle or dots can be identified quite quickly.</p></blockquote><p class="who">Arjun</p></li>
+        <li><blockquote><p>Large differences in texture work best. I like patterns that can be recognised immediately rather than having to concentrate for a long time.</p></blockquote><p class="who">Suddha</p></li>
+        <li><blockquote><p>Raised lines and different shapes are easy. I think a tactile grid could work well for a game because you can understand where the boundaries are.</p></blockquote><p class="who">Devam</p></li>
+      </ul>
+    </section>
+    <section class="interview">
+      <h3>Have you played games that rely mainly on sound or touch? What did you like or dislike about them?</h3>
+      <ul class="answers">
+        <li><blockquote><p>I've played a few audio-based games. I like when sounds are clear and not too many things are happening at once. If there are too many sounds, it becomes difficult to understand what is important.</p></blockquote><p class="who">Mysha</p></li>
+        <li><blockquote><p>Yes, mostly audio games. I like games where sound actually affects what you have to do instead of just being background music.</p></blockquote><p class="who">Rohan</p></li>
+        <li><blockquote><p>I've tried some audio games. I liked the challenge, but sometimes the sounds were too similar and I couldn't understand what they meant.</p></blockquote><p class="who">Vedant</p></li>
+        <li><blockquote><p>I've played audio-based games. I enjoy games where I have to figure something out instead of just following instructions.</p></blockquote><p class="who">Arjun</p></li>
+        <li><blockquote><p>Not many. I think it would be interesting if the game used sound as part of the actual gameplay rather than simply giving instructions.</p></blockquote><p class="who">Suddha</p></li>
+        <li><blockquote><p>I've played some audio games. The best ones are the ones where you have to listen carefully and make decisions. If the sound is only giving instructions, it becomes boring.</p></blockquote><p class="who">Devam</p></li>
+      </ul>
+    </section>
+    <section class="interview">
+      <h3>If you could design a game that you play without seeing, what would make it enjoyable and easy to understand?</h3>
+      <ul class="answers">
+        <li><blockquote><p>It should be simple to learn but become more challenging. I would also want sounds to have a clear meaning that I can remember.</p></blockquote><p class="who">Mysha</p></li>
+        <li><blockquote><p>I think there should be a clear sound system. Once I understand what each sound means, I should be able to play without constantly needing instructions.</p></blockquote><p class="who">Rohan</p></li>
+        <li><blockquote><p>It should feel like a real game, not like an accessibility exercise. There should be some challenge and maybe different levels.</p></blockquote><p class="who">Vedant</p></li>
+        <li><blockquote><p>I would want the game to give me enough information to make my own decisions. It shouldn't tell me exactly what to do every time.</p></blockquote><p class="who">Arjun</p></li>
+        <li><blockquote><p>It should have different levels and maybe a score. I think competition could make it more exciting.</p></blockquote><p class="who">Suddha</p></li>
+        <li><blockquote><p>I would make sound the main challenge. You should have to remember sounds and figure out what they mean rather than just being told where to go.</p></blockquote><p class="who">Devam</p></li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="section" aria-labelledby="insights-heading">
+    <h2 id="insights-heading">What the interviews showed</h2>
+    <div class="prose"><p>Sound can be a spatial landmark as well as an instruction. Participants already rely on environmental sounds such as footsteps, voices, traffic and echoes to understand their surroundings and locate themselves within a space.</p>
+<p>Participants also tend to remember routes as sequences of movements and sensory cues rather than as visual maps. This suggests that Sound Maze can use sound sequences to communicate direction, movement and location.</p>
+<p>Touch needs clear differences. Distinct textures, raised lines, dots and grooves are easier to recognise than subtle variations, so the tactile system should use a limited, consistent vocabulary.</p>
+<p>Too many sounds, or sounds that are too similar, can cause confusion and cognitive overload. The sound language needs to stay simple, distinctive and learnable.</p>
+<p>Participants preferred interpreting information and making decisions to simply following instructions. This creates an opportunity to make sound the actual gameplay mechanic.</p>
+<p>Participants also felt that accessibility should not compromise fun or challenge. The game should include progression, memory, problem-solving and scoring, so that Sound Maze is a genuine game.</p></div>
+  </section>
+
+  <section class="section" aria-labelledby="secondary-heading">
+    <h2 id="secondary-heading">Five papers</h2>
+    <div class="prose"><p>Parisha's secondary research draws on five papers published between 2017 and 2025: two on how blind and visually impaired people form mental maps, two on navigation with touch and sound cues, and one on accessible electronic games for blind children and young people. The full references are below, each with a short note on the paper.</p></div>
+    <ol class="sources">
+      <li><span><a href="https://doi.org/10.1038/s41598-022-15858-4" hreflang="en">Loes Ottink, Bram van Raalte, Christian F. Doeller, Thea M. van der Geest, Richard J. A. van Wezel (2022). Cognitive map formation through tactile map navigation in visually impaired and sighted persons</a>. <i>Scientific Reports, 12, article 11567</i>.</span><span class="finding">Ten visually impaired people and ten sighted people learned a tactile map of a city-like layout with five marked locations, and both groups then estimated distances, pointed to locations, rebuilt routes and placed items with similar accuracy.</span></li>
+      <li><span><a href="https://doi.org/10.1016/j.chb.2017.04.057" hreflang="en">Konstantinos Papadopoulos, Eleni Koustriava, Marialena Barouti (2017). Cognitive maps of individuals with blindness for familiar and unfamiliar spaces: Construction through audio-tactile maps and walked experience</a>. <i>Computers in Human Behavior, 75, pp. 376-384</i>.</span><span class="finding">The abstract of this paper could not be checked, so this note goes by its title and by how another paper cites it. The title says the study compares the mental maps blind people built from audio-tactile maps with the ones they built by walking, in familiar and unfamiliar spaces. Ottink et al. (2022) cite it as evidence that blind people can reproduce maps or routes after exploring an audio-tactile map.</span></li>
+      <li><span><a href="https://doi.org/10.3389/fnhum.2019.00443" hreflang="en">Arnav Bharadwaj, Saurabh Bhaskar Shaw, Daniel Goldreich (2019). Comparing Tactile to Auditory Guidance for Blind Individuals</a>. <i>Frontiers in Human Neuroscience, 13, article 443</i>.</span><span class="finding">Twelve blind participants walked paths guided by either spoken turn commands or a vibrating hip belt; in silence the spoken commands were faster and led to fewer missed or wrong turns, and with street sounds playing the speed gap between the two was no longer significant.</span></li>
+      <li><span><a href="https://doi.org/10.1007/s12193-025-00463-2" hreflang="en">Piotr Skulimowski, Paweł Strumiłło, Szymon Trygar (2025). Haptic and auditory cues: a study on independent navigation for visually impaired individuals</a>. <i>Journal on Multimodal User Interfaces, 19(4), pp. 363-373</i>.</span><span class="finding">Ten blind or severely visually impaired adults aged 37 to 56 tested a wearable aid that shows obstacles through a 22-actuator vibrating belt and adds sound and voice messages. The authors report that every participant read obstacle locations correctly in static tests, and that the combined haptic and auditory cues worked in walking tests under simulated conditions.</span></li>
+      <li><span><a href="https://doi.org/10.1111/bjet.12628" hreflang="en">George Giannakopoulos, Nicolas-Alexander Tatlas, Vassilios Giannakopoulos, Andreas Floros, Philippos Katsoulis (2018). Accessible electronic games for blind children and young people</a>. <i>British Journal of Educational Technology, 49(4), pp. 608-619</i>.</span><span class="finding">The authors built audio games that use sonification for blind and low vision players, plus a tool called Memor-i studio for making such games, and an evaluation with children and young people aged 7 to 20 at two centres for the blind in Athens gave encouraging results.</span></li>
+    </ol>
+    <h3 class="subheading">Takeaways</h3>
+    <div class="prose"><p>Sound and touch can work together to communicate space without relying on vision. Research on cognitive mapping suggests that people who are blind or visually impaired can build mental maps of unfamiliar environments from non-visual information, such as auditory and tactile cues.</p>
+<p>Sound can communicate spatial information, including direction, movement and environmental landmarks. It needs careful design, because excessive or unclear sound may interfere with other important environmental sounds. In one study, 10 of 12 blind participants said they could pay attention to street sounds better with a vibrating belt than with spoken directions, though they remembered the street sounds equally well with both.</p>
+<p>Tactile information can give physical structure to sound. Studies suggest that tactile maps and audio-tactile systems can support spatial understanding and recall.</p>
+<p>Research also suggests that sound and touch cues can be combined, so the two senses can be designed as complementary channels.</p>
+<p>An important point for Sound Maze is that players may benefit from the freedom to explore, compared with following a fixed sequence of instructions. Arjun and Devam said as much in their interviews, though none of the five papers reports it. Interactive audio-tactile systems let users choose how they explore and build their own understanding of a space.</p>
+<p>Sound Maze should create a new spatial experience of its own, where sound communicates direction and information and touch communicates structure. The player listens, feels, interprets, remembers and makes decisions, and navigation itself becomes the game.</p></div>
+  </section>
+
+  <hr class="wall" style="--gap: 40%">
+
+  <section class="section" aria-labelledby="form-heading">
+    <h2 id="form-heading">The form</h2>
+    <p class="form-statement">Sound Maze turns navigation into play. The player hears the path, feels it, remembers it and finds it, without seeing it.</p>
+    <dl class="equations">
+      <dt>SOUND</dt><dd class="equals" aria-hidden="true">=</dd><dd>INFORMATION</dd>
+      <dt>TOUCH</dt><dd class="equals" aria-hidden="true">=</dd><dd>SPACE</dd>
+      <dt>MEMORY</dt><dd class="equals" aria-hidden="true">=</dd><dd>NAVIGATION</dd>
+      <dt>GAMEPLAY</dt><dd class="equals" aria-hidden="true">=</dd><dd>CHALLENGE</dd>
+      <dt>MULTISENSORY DESIGN</dt><dd class="equals" aria-hidden="true">=</dd><dd>EXPERIENCE</dd>
+    </dl>
+  </section>
+
+  <section class="section" aria-labelledby="decisions-heading">
+    <h2 id="decisions-heading">From the interviews to the demo</h2>
+    <div class="prose"><p>Six choices in the browser demo, and the research behind each one.</p></div>
+    <ul class="decisions">
+      <li><p><span class="label">From the research</span>Mysha said that with too many sounds it becomes difficult to understand what is important. Vedant said the sounds in some audio games were too similar to understand.</p><p><span class="label">In the demo</span>The demo has 11 sounds, each with one meaning. They are introduced a few at a time.</p></li>
+      <li><p><span class="label">From the research</span>Arjun and Devam want to make their own decisions in a game. Rohan wants to play without constantly needing instructions.</p><p><span class="label">In the demo</span>Listens are limited, and the player chooses where to spend them.</p></li>
+      <li><p><span class="label">From the research</span>Mysha, Rohan, Vedant and Suddha remember a route as a sequence.</p><p><span class="label">In the demo</span>Level 3 plays the route as tones before you start. In level 4 you hear the first three forks this way, then you have four listens.</p></li>
+      <li><p><span class="label">From the research</span>Arjun and Devam use sounds as landmarks.</p><p><span class="label">In the demo</span>The fork sound marks every point where you have to decide which way to go.</p></li>
+      <li><p><span class="label">From the research</span>Vedant suggested different levels. Suddha suggested levels and a score.</p><p><span class="label">In the demo</span>There are four levels, and each one is scored out of 100.</p></li>
+      <li><p><span class="label">From the research</span>Parisha's secondary research suggests that excessive or unclear sound can interfere with other environmental sounds.</p><p><span class="label">In the demo</span>The harsh sound is rough and buzzing, but no louder than the soft one.</p></li>
+    </ul>
+  </section>
+
+  <hr class="wall" style="--gap: 80%">
+
+  <section class="section" id="sounds" aria-labelledby="sounds-heading">
+    <h2 id="sounds-heading">The sound key</h2>
+    <div class="columns">
+      <figure class="her-key">
+        <img src="img/sketch-key.png" width="560" height="744" alt="Parisha's key pairs two sounds with two meanings. A loud sound marks a restricted area or the wrong direction. A soft, smooth sound marks the correct way or the right direction.">
+      </figure>
+      <div class="prose">
+        <p>The demo has 11 sounds. Each one has a single meaning and keeps it in every level. The narrator introduces them a few at a time.</p>
+        <p>The demo keeps her meaning with one change. Its harsh sound, for a path that doesn't lead out, is rough and buzzing but no louder than the soft one, so it is safe to hear on headphones. Her secondary research also suggests that excessive or unclear sound can interfere with other environmental sounds.</p>
+      </div>
+    </div>
+    <ul class="sound-list">
+  <li><button class="button button--small button--line" type="button" data-sound="step" aria-describedby="sound-step">Play<span class="visually-hidden"> Step</span></button>
+    <span class="name">Step</span>
+    <span class="meaning" id="sound-step">You moved one square.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="wall" aria-describedby="sound-wall">Play<span class="visually-hidden"> Wall</span></button>
+    <span class="name">Wall</span>
+    <span class="meaning" id="sound-wall">There's a wall that way. You didn't move.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="fork" aria-describedby="sound-fork">Play<span class="visually-hidden"> Fork</span></button>
+    <span class="name">Fork</span>
+    <span class="meaning" id="sound-fork">More than one way is open here.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="soft" aria-describedby="sound-soft">Play<span class="visually-hidden"> Soft</span></button>
+    <span class="name">Soft</span>
+    <span class="meaning" id="sound-soft">Listening down this path: it leads out.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="harsh" aria-describedby="sound-harsh">Play<span class="visually-hidden"> Harsh</span></button>
+    <span class="name">Harsh</span>
+    <span class="meaning" id="sound-harsh">Listening down this path: it doesn't lead out.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="exit" aria-describedby="sound-exit">Play<span class="visually-hidden"> Way out</span></button>
+    <span class="name">Way out</span>
+    <span class="meaning" id="sound-exit">You've reached the exit.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="up" aria-describedby="sound-up">Play<span class="visually-hidden"> Up</span></button>
+    <span class="name">Up</span>
+    <span class="meaning" id="sound-up">Route tone: high.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="down" aria-describedby="sound-down">Play<span class="visually-hidden"> Down</span></button>
+    <span class="name">Down</span>
+    <span class="meaning" id="sound-down">Route tone: low.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="left" aria-describedby="sound-left">Play<span class="visually-hidden"> Left</span></button>
+    <span class="name">Left</span>
+    <span class="meaning" id="sound-left">Route tone: two short notes, from the left.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="right" aria-describedby="sound-right">Play<span class="visually-hidden"> Right</span></button>
+    <span class="name">Right</span>
+    <span class="meaning" id="sound-right">Route tone: one long note, from the right.</span></li>
+  <li><button class="button button--small button--line" type="button" data-sound="empty" aria-describedby="sound-empty">Play<span class="visually-hidden"> No listens</span></button>
+    <span class="name">No listens</span>
+    <span class="meaning" id="sound-empty">You've used all your listens for this level.</span></li>
+</ul>
+  </section>
+
+  <section class="section" id="maze" aria-labelledby="maze-heading">
+    <h2 id="maze-heading">Parisha's maze</h2>
+    <div class="prose"><p>Parisha drew this maze by hand and marked it with red and green dots, using the key beside it. Level 4 of the demo is a trace of her drawing.</p></div>
+    <div class="maze-pair">
+      <figure>
+        <img src="img/sketch-maze.png" width="900" height="900" alt="Parisha's hand-drawn maze: a square of thick black lines, with 14 green dots along the way through and 25 red dots in the side passages. The way in is at the bottom left and the way out at the top right.">
+        <figcaption class="figure-note">Parisha's hand-drawn maze and key.</figcaption>
+      </figure>
+      <figure>
+        <svg class="maze" viewBox="0 0 440 440" role="img" aria-labelledby="trace-title"><title id="trace-title">The trace used in level 4, on a 10 by 10 grid. Like her drawing, it starts at the bottom left and exits at the top right. Green dots mark where she drew green dots, red crosses where she drew red ones.</title><g class="maze-walls" stroke-width="6"><line x1="20" y1="20" x2="420" y2="20" pathLength="1"/><line x1="20" y1="60" x2="60" y2="60" pathLength="1"/><line x1="140" y1="60" x2="180" y2="60" pathLength="1"/><line x1="300" y1="60" x2="380" y2="60" pathLength="1"/><line x1="100" y1="100" x2="140" y2="100" pathLength="1"/><line x1="220" y1="100" x2="340" y2="100" pathLength="1"/><line x1="380" y1="100" x2="420" y2="100" pathLength="1"/><line x1="60" y1="140" x2="100" y2="140" pathLength="1"/><line x1="140" y1="140" x2="220" y2="140" pathLength="1"/><line x1="260" y1="140" x2="380" y2="140" pathLength="1"/><line x1="60" y1="180" x2="140" y2="180" pathLength="1"/><line x1="180" y1="180" x2="220" y2="180" pathLength="1"/><line x1="340" y1="180" x2="380" y2="180" pathLength="1"/><line x1="100" y1="220" x2="180" y2="220" pathLength="1"/><line x1="220" y1="220" x2="260" y2="220" pathLength="1"/><line x1="380" y1="220" x2="420" y2="220" pathLength="1"/><line x1="60" y1="260" x2="100" y2="260" pathLength="1"/><line x1="180" y1="260" x2="220" y2="260" pathLength="1"/><line x1="260" y1="260" x2="300" y2="260" pathLength="1"/><line x1="20" y1="300" x2="100" y2="300" pathLength="1"/><line x1="180" y1="300" x2="220" y2="300" pathLength="1"/><line x1="260" y1="300" x2="340" y2="300" pathLength="1"/><line x1="60" y1="340" x2="100" y2="340" pathLength="1"/><line x1="340" y1="340" x2="420" y2="340" pathLength="1"/><line x1="60" y1="380" x2="140" y2="380" pathLength="1"/><line x1="220" y1="380" x2="260" y2="380" pathLength="1"/><line x1="300" y1="380" x2="340" y2="380" pathLength="1"/><line x1="20" y1="420" x2="420" y2="420" pathLength="1"/><line x1="20" y1="20" x2="20" y2="380" pathLength="1"/><line x1="60" y1="60" x2="60" y2="140" pathLength="1"/><line x1="60" y1="180" x2="60" y2="260" pathLength="1"/><line x1="60" y1="340" x2="60" y2="380" pathLength="1"/><line x1="100" y1="60" x2="100" y2="100" pathLength="1"/><line x1="100" y1="140" x2="100" y2="180" pathLength="1"/><line x1="140" y1="20" x2="140" y2="60" pathLength="1"/><line x1="140" y1="100" x2="140" y2="140" pathLength="1"/><line x1="140" y1="220" x2="140" y2="340" pathLength="1"/><line x1="180" y1="60" x2="180" y2="100" pathLength="1"/><line x1="180" y1="180" x2="180" y2="260" pathLength="1"/><line x1="180" y1="300" x2="180" y2="380" pathLength="1"/><line x1="220" y1="20" x2="220" y2="60" pathLength="1"/><line x1="220" y1="100" x2="220" y2="180" pathLength="1"/><line x1="220" y1="300" x2="220" y2="340" pathLength="1"/><line x1="260" y1="60" x2="260" y2="100" pathLength="1"/><line x1="260" y1="140" x2="260" y2="220" pathLength="1"/><line x1="260" y1="300" x2="260" y2="340" pathLength="1"/><line x1="260" y1="380" x2="260" y2="420" pathLength="1"/><line x1="300" y1="20" x2="300" y2="60" pathLength="1"/><line x1="300" y1="100" x2="300" y2="140" pathLength="1"/><line x1="300" y1="180" x2="300" y2="260" pathLength="1"/><line x1="300" y1="340" x2="300" y2="380" pathLength="1"/><line x1="340" y1="140" x2="340" y2="180" pathLength="1"/><line x1="340" y1="220" x2="340" y2="300" pathLength="1"/><line x1="340" y1="340" x2="340" y2="380" pathLength="1"/><line x1="380" y1="100" x2="380" y2="140" pathLength="1"/><line x1="380" y1="220" x2="380" y2="300" pathLength="1"/><line x1="380" y1="380" x2="380" y2="420" pathLength="1"/><line x1="420" y1="60" x2="420" y2="420" pathLength="1"/></g><g class="maze-marks"><circle class="mark-on" cx="40" cy="400" r="6"/><circle class="mark-on" cx="80" cy="240" r="6"/><circle class="mark-on" cx="80" cy="120" r="6"/><circle class="mark-on" cx="80" cy="320" r="6"/><circle class="mark-on" cx="120" cy="40" r="6"/><circle class="mark-on" cx="120" cy="160" r="6"/><circle class="mark-on" cx="120" cy="240" r="6"/><circle class="mark-on" cx="160" cy="80" r="6"/><circle class="mark-on" cx="160" cy="200" r="6"/><circle class="mark-on" cx="200" cy="120" r="6"/><circle class="mark-on" cx="200" cy="160" r="6"/><circle class="mark-on" cx="240" cy="40" r="6"/><circle class="mark-on" cx="280" cy="80" r="6"/><circle class="mark-on" cx="400" cy="40" r="6"/><g class="mark-off" stroke-width="2.8000000000000003"><line x1="34.8" y1="74.8" x2="45.2" y2="85.2"/><line x1="34.8" y1="85.2" x2="45.2" y2="74.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="34.8" y1="274.8" x2="45.2" y2="285.2"/><line x1="34.8" y1="285.2" x2="45.2" y2="274.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="74.8" y1="354.8" x2="85.2" y2="365.2"/><line x1="74.8" y1="365.2" x2="85.2" y2="354.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="74.8" y1="154.8" x2="85.2" y2="165.2"/><line x1="74.8" y1="165.2" x2="85.2" y2="154.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="154.8" y1="234.8" x2="165.2" y2="245.2"/><line x1="154.8" y1="245.2" x2="165.2" y2="234.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="194.8" y1="234.8" x2="205.2" y2="245.2"/><line x1="194.8" y1="245.2" x2="205.2" y2="234.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="194.8" y1="194.8" x2="205.2" y2="205.2"/><line x1="194.8" y1="205.2" x2="205.2" y2="194.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="194.8" y1="314.8" x2="205.2" y2="325.2"/><line x1="194.8" y1="325.2" x2="205.2" y2="314.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="234.8" y1="114.8" x2="245.2" y2="125.2"/><line x1="234.8" y1="125.2" x2="245.2" y2="114.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="234.8" y1="394.8" x2="245.2" y2="405.2"/><line x1="234.8" y1="405.2" x2="245.2" y2="394.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="234.8" y1="194.8" x2="245.2" y2="205.2"/><line x1="234.8" y1="205.2" x2="245.2" y2="194.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="274.8" y1="154.8" x2="285.2" y2="165.2"/><line x1="274.8" y1="165.2" x2="285.2" y2="154.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="274.8" y1="234.8" x2="285.2" y2="245.2"/><line x1="274.8" y1="245.2" x2="285.2" y2="234.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="314.8" y1="114.8" x2="325.2" y2="125.2"/><line x1="314.8" y1="125.2" x2="325.2" y2="114.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="314.8" y1="354.8" x2="325.2" y2="365.2"/><line x1="314.8" y1="365.2" x2="325.2" y2="354.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="314.8" y1="154.8" x2="325.2" y2="165.2"/><line x1="314.8" y1="165.2" x2="325.2" y2="154.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="314.8" y1="274.8" x2="325.2" y2="285.2"/><line x1="314.8" y1="285.2" x2="325.2" y2="274.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="354.8" y1="154.8" x2="365.2" y2="165.2"/><line x1="354.8" y1="165.2" x2="365.2" y2="154.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="354.8" y1="394.8" x2="365.2" y2="405.2"/><line x1="354.8" y1="405.2" x2="365.2" y2="394.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="394.8" y1="234.8" x2="405.2" y2="245.2"/><line x1="394.8" y1="245.2" x2="405.2" y2="234.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="394.8" y1="74.8" x2="405.2" y2="85.2"/><line x1="394.8" y1="85.2" x2="405.2" y2="74.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="394.8" y1="114.8" x2="405.2" y2="125.2"/><line x1="394.8" y1="125.2" x2="405.2" y2="114.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="394.8" y1="394.8" x2="405.2" y2="405.2"/><line x1="394.8" y1="405.2" x2="405.2" y2="394.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="394.8" y1="314.8" x2="405.2" y2="325.2"/><line x1="394.8" y1="325.2" x2="405.2" y2="314.8"/></g><g class="mark-off" stroke-width="2.8000000000000003"><line x1="394.8" y1="194.8" x2="405.2" y2="205.2"/><line x1="394.8" y1="205.2" x2="405.2" y2="194.8"/></g></g></svg>
+        <figcaption class="figure-note">The trace used in level 4, on a 10 by 10 grid. Like her drawing, it starts at the bottom left and exits at the top right. Green dots mark where she drew green dots, red crosses where she drew red ones.</figcaption>
+      </figure>
+    </div>
+    <div class="prose"><p>Every square can be reached from the start.</p>
+<p>The shortest route is 30 steps long and passes six forks.</p>
+<p>Of her 14 green dots, 13 fall on the shortest route. Of her 25 red dots, 24 fall off it.</p>
+<p>One green dot sits just across a wall from the route.</p>
+<p>One red dot sits on the route, in the square beside the exit, where a dead-end branch turns off.</p></div>
+    <details>
+      <summary>Read a description of the drawing</summary>
+      <p>A square maze drawn by hand in thick black lines, on the right side of a light grey page. The start is an opening in the outer wall at the bottom left corner, and the exit is a gap in the right wall at the top right corner. Inside, short walls and turns divide the square into passages that line up on a grid of about 10 by 10 squares. On the left of the page is a key in Parisha's handwriting, headed &quot;Key&quot;. Under it, a red dot is labelled &quot;wrong direction&quot;, with an arrow to the words &quot;loud sound&quot;. Below that, a green dot is labelled &quot;right direction&quot;, with a curved line to the words &quot;soft, smooth sound&quot;. The maze holds 14 green dots and 25 red dots. One green dot sits at the opening at the start. The other green dots climb through the left half of the maze to the top, then run along the top rows to the square at the exit. The red dots are spread through the side passages, most of them in the right half of the maze and a few on the left side.</p>
+    </details>
+  </section>
+
+  <hr class="wall" style="--gap: 30%">
+
+  <section class="section play-section" aria-labelledby="play-heading">
+    <h2 id="play-heading">The browser demo</h2>
+    <div class="prose"><p>The demo is the sound part of Sound Maze, played in a browser with the keyboard. Headphones help, but speakers work too. Level 1 is one path with no forks. Level 2 adds two forks, and you can listen down a path with Shift and an arrow key. In level 3 you hear the route as tones before you start. Level 4 is Parisha's maze. The screen stays blank, like a sheet of paper, while you play. When you get out, the maze appears in ink with your footsteps on it: green dots on the shortest route and red crosses off it. A narrator, in English or Hindi, introduces each new sound once, speaks up when you walk into a wall and reads out your results at the end of the level.</p></div>
+    <p><a class="button" href="play/">Play the maze</a></p>
+    <div class="prose access-note">
+      <h3 class="subheading">Who can play it</h3>
+      <p>The demo is played by ear, so it needs hearing in at least one ear. If you hear with one ear only, turn on Mono in the pause menu. Everything the narrator says also appears on screen. The demo needs a keyboard, so it doesn't work on phones yet. It hasn't been tested with blind or visually impaired players.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="made-by">Sound Maze is a design project by Parisha Jain.</p>
+  <p>Set in Atkinson Hyperlegible Next, designed by the Braille Institute for readers with low vision, and Mukta by Ek Type for the Hindi.</p>
+</footer>
+</body>
+</html>

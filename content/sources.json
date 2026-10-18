@@ -1,0 +1,57 @@
+[
+  {
+    "authors": "Loes Ottink, Bram van Raalte, Christian F. Doeller, Thea M. van der Geest, Richard J. A. van Wezel",
+    "year": 2022,
+    "title": "Cognitive map formation through tactile map navigation in visually impaired and sighted persons",
+    "journal": "Scientific Reports, 12, article 11567",
+    "url": "https://doi.org/10.1038/s41598-022-15858-4",
+    "verified": true,
+    "finding_en": "Ten visually impaired people and ten sighted people learned a tactile map of a city-like layout with five marked locations, and both groups then estimated distances, pointed to locations, rebuilt routes and placed items with similar accuracy.",
+    "finding_hi": "दस दृष्टिबाधित और दस देख सकने वाले लोगों ने शहर जैसे इलाके का एक छूकर पढ़ा जाने वाला नक्शा सीखा, जिस पर पाँच जगहों के निशान थे। इसके बाद दोनों समूहों ने दूरियों का अंदाज़ा लगाने, जगहों की तरफ़ इशारा करने, रास्ते दोबारा बनाने और चीज़ें उनकी जगह पर रखने में लगभग एक जैसी सटीकता दिखाई।",
+    "spec_citation_issue": "No mismatch in authors, year, title or journal. The takeaway says research \"demonstrates\" that blind and visually impaired people build mental maps of unfamiliar places from auditory and tactile cues. This study had 10 visually impaired and 10 sighted participants and used a tactile map with spoken item names, so \"suggests\" is the fairer word, and sound was a minor cue in it."
+  },
+  {
+    "authors": "Konstantinos Papadopoulos, Eleni Koustriava, Marialena Barouti",
+    "year": 2017,
+    "title": "Cognitive maps of individuals with blindness for familiar and unfamiliar spaces: Construction through audio-tactile maps and walked experience",
+    "journal": "Computers in Human Behavior, 75, pp. 376-384",
+    "url": "https://doi.org/10.1016/j.chb.2017.04.057",
+    "verified": true,
+    "finding_en": "The abstract of this paper could not be checked, so this note goes by its title and by how another paper cites it. The title says the study compares the mental maps blind people built from audio-tactile maps with the ones they built by walking, in familiar and unfamiliar spaces. Ottink et al. (2022) cite it as evidence that blind people can reproduce maps or routes after exploring an audio-tactile map.",
+    "finding_hi": "इस शोध-पत्र का सारांश जाँचा नहीं जा सका, इसलिए यह नोट उसके शीर्षक पर, और एक दूसरे शोध-पत्र में दिए गए उसके हवाले पर आधारित है। शीर्षक के मुताबिक यह अध्ययन जानी-पहचानी और अनजान जगहों के लिए दृष्टिहीन लोगों के मन में बने नक्शों की तुलना करता है: वे नक्शे जो आवाज़-स्पर्श वाले नक्शों से बने, और वे जो पैदल चलकर बने। Ottink et al. (2022) इसे इस बात के सबूत के तौर पर पेश करते हैं कि आवाज़-स्पर्श वाले नक्शे को टटोलने के बाद दृष्टिहीन लोग नक्शे या रास्ते फिर से बना सकते हैं।",
+    "spec_citation_issue": "Authors, year, title and journal match. The takeaway that interactive audio-tactile maps produce better recall than tactile maps with verbal descriptions could not be traced to this paper. Its title names a comparison with walked experience, and none of the five sources opened here reports a comparison with verbal descriptions. Check the full text, or cite the paper that reports that comparison."
+  },
+  {
+    "authors": "Arnav Bharadwaj, Saurabh Bhaskar Shaw, Daniel Goldreich",
+    "year": 2019,
+    "title": "Comparing Tactile to Auditory Guidance for Blind Individuals",
+    "journal": "Frontiers in Human Neuroscience, 13, article 443",
+    "url": "https://doi.org/10.3389/fnhum.2019.00443",
+    "verified": true,
+    "finding_en": "Twelve blind participants walked paths guided by either spoken turn commands or a vibrating hip belt; in silence the spoken commands were faster and led to fewer missed or wrong turns, and with street sounds playing the speed gap between the two was no longer significant.",
+    "finding_hi": "बारह दृष्टिहीन प्रतिभागी कुछ रास्तों पर चले, या तो बोलकर दिए गए मुड़ने के निर्देशों के सहारे या कमर पर बँधी कंपन करने वाली बेल्ट के सहारे। शांत माहौल में बोले गए निर्देशों के साथ वे तेज़ चले, और उनसे मोड़ कम छूटे या कम ग़लत हुए। सड़क की आवाज़ें चलाने पर दोनों तरीकों की रफ़्तार का फ़र्क आँकड़ों के हिसाब से अहम नहीं रहा।",
+    "spec_citation_issue": "No mismatch in authors, year, title or journal. Two takeaways go beyond it. The paper does not measure sound localisation, so the line \"tactile feedback can improve auditory spatial localisation\" has no support here or in the other four sources. The claim that guidance sound interferes with environmental sounds rests on participant opinion (10 of 12 said they could attend to street sounds better with the belt); measured recall of street sounds was the same with both methods. The takeaways also leave out that spoken commands worked better in quiet."
+  },
+  {
+    "authors": "Piotr Skulimowski, Paweł Strumiłło, Szymon Trygar",
+    "year": 2025,
+    "title": "Haptic and auditory cues: a study on independent navigation for visually impaired individuals",
+    "journal": "Journal on Multimodal User Interfaces, 19(4), pp. 363-373",
+    "url": "https://doi.org/10.1007/s12193-025-00463-2",
+    "verified": true,
+    "finding_en": "Ten blind or severely visually impaired adults aged 37 to 56 tested a wearable aid that shows obstacles through a 22-actuator vibrating belt and adds sound and voice messages. The authors report that every participant read obstacle locations correctly in static tests, and that the combined haptic and auditory cues worked in walking tests under simulated conditions.",
+    "finding_hi": "37 से 56 साल के दस दृष्टिहीन या बहुत कम दृष्टि वाले वयस्कों ने पहना जाने वाला एक उपकरण आज़माया, जो 22 ऐक्चुएटर (कंपन करने वाले पुर्ज़े) वाली बेल्ट से रुकावटें बताता है और साथ में आवाज़ और बोले हुए संदेश भी देता है। लेखकों के मुताबिक बिना चले किए गए परीक्षणों में हर प्रतिभागी ने रुकावटों की जगह सही पहचानी, और नकली तौर पर बनाए गए हालात में चलकर किए गए परीक्षणों में कंपन और आवाज़ के मिले-जुले संकेत कारगर रहे।",
+    "spec_citation_issue": "No mismatch in authors, year, title or journal (published online 24 October 2025). It supports the general point that haptic and auditory cues can work together, which is the authors' own conclusion. It tests both cues together in one device with no sighted group, so it cannot show which cue does what or that one improves the other, and it measures neither cognitive load nor sound localisation."
+  },
+  {
+    "authors": "George Giannakopoulos, Nicolas-Alexander Tatlas, Vassilios Giannakopoulos, Andreas Floros, Philippos Katsoulis",
+    "year": 2018,
+    "title": "Accessible electronic games for blind children and young people",
+    "journal": "British Journal of Educational Technology, 49(4), pp. 608-619",
+    "url": "https://doi.org/10.1111/bjet.12628",
+    "verified": true,
+    "finding_en": "The authors built audio games that use sonification for blind and low vision players, plus a tool called Memor-i studio for making such games, and an evaluation with children and young people aged 7 to 20 at two centres for the blind in Athens gave encouraging results.",
+    "finding_hi": "लेखकों ने दृष्टिहीन और कम दृष्टि वाले खिलाड़ियों के लिए ऐसे ऑडियो गेम बनाए जिनमें जानकारी को आवाज़ में बदला जाता है (सोनिफ़िकेशन), और ऐसे गेम बनाने के लिए Memor-i studio नाम का एक टूल भी। एथेंस में दृष्टिहीन लोगों के दो केंद्रों पर 7 से 20 साल के बच्चों और युवाओं के साथ की गई परख के नतीजे उत्साह बढ़ाने वाले रहे।",
+    "spec_citation_issue": "No mismatch in authors, year, title or journal. The takeaways do not draw on this paper. It supports the objective of making a game for blind players, though its players were aged 7 to 20 and the spec's audience is 18 to 35. The takeaway that users benefit from freedom to explore is not reported here or in the other four sources; it comes from the interviews (Arjun and Devam)."
+  }
+]

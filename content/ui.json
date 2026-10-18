@@ -1,0 +1,370 @@
+{
+  "page_title": {
+    "en": "Play Sound Maze",
+    "hi": "साउंड मेज़ खेलिए"
+  },
+  "back": {
+    "en": "Back to the project",
+    "hi": "प्रोजेक्ट पर वापस जाइए"
+  },
+  "lang_switch": {
+    "en": "हिन्दी में खेलें",
+    "hi": "Play in English"
+  },
+  "intro": {
+    "en": "Four mazes, played by ear. New sounds are introduced a few at a time.",
+    "hi": "चार भूलभुलैया, जिनमें सुनकर रास्ता ढूँढना है। नई आवाज़ें थोड़ी-थोड़ी करके सिखाई जाती हैं।"
+  },
+  "headphones": {
+    "en": "Headphones help, but speakers work too.",
+    "hi": "हेडफ़ोन से मदद मिलती है, पर स्पीकर पर भी खेल सकते हैं।"
+  },
+  "keyboard_only": {
+    "en": "This game is played with a keyboard. Open this page on a laptop or desktop computer to play.",
+    "hi": "यह खेल कीबोर्ड से खेला जाता है। खेलने के लिए यह पेज लैपटॉप या डेस्कटॉप कंप्यूटर पर खोलिए।"
+  },
+  "keyboard_only_link": {
+    "en": "Read about the project instead",
+    "hi": "इसके बजाय प्रोजेक्ट के बारे में पढ़िए"
+  },
+  "controls_heading": {
+    "en": "Controls",
+    "hi": "कंट्रोल"
+  },
+  "key_move": {
+    "en": "Arrow keys",
+    "hi": "ऐरो कीज़"
+  },
+  "key_move_desc": {
+    "en": "Move one square",
+    "hi": "एक खाना चलिए"
+  },
+  "key_listen": {
+    "en": "Shift and an arrow",
+    "hi": "Shift के साथ ऐरो"
+  },
+  "key_listen_desc": {
+    "en": "Listen down a path (levels 2 to 4)",
+    "hi": "किसी रास्ते की आवाज़ सुनिए (लेवल 2 से 4)"
+  },
+  "key_repeat": {
+    "en": "R",
+    "hi": "R"
+  },
+  "key_repeat_desc": {
+    "en": "Hear the route again, or the last sound",
+    "hi": "रास्ता दोबारा सुनिए, या पिछली आवाज़"
+  },
+  "key_help": {
+    "en": "H",
+    "hi": "H"
+  },
+  "key_help_desc": {
+    "en": "Hear the controls",
+    "hi": "कंट्रोल सुनिए"
+  },
+  "key_pause": {
+    "en": "Esc",
+    "hi": "Esc"
+  },
+  "key_pause_desc": {
+    "en": "Pause",
+    "hi": "खेल रोकिए"
+  },
+  "key_skip": {
+    "en": "Enter",
+    "hi": "Enter"
+  },
+  "key_skip_desc": {
+    "en": "Skip the spoken introduction",
+    "hi": "बोला जा रहा परिचय छोड़िए"
+  },
+  "screen_reader_note": {
+    "en": "Screen reader users: the maze takes arrow keys while you play. With NVDA, if arrows don't move you, press NVDA and Space to switch to focus mode.",
+    "hi": "स्क्रीन रीडर इस्तेमाल करने वालों के लिए: खेलते समय ऐरो कीज़ भूलभुलैया में चलने के काम आती हैं। NVDA में अगर ऐरो दबाने पर आप आगे नहीं बढ़ते, तो फ़ोकस मोड पर जाने के लिए NVDA और Space दबाइए।"
+  },
+  "levels_heading": {
+    "en": "Levels",
+    "hi": "लेवल"
+  },
+  "level_1_name": {
+    "en": "Steps and walls",
+    "hi": "कदम और दीवारें"
+  },
+  "level_1_desc": {
+    "en": "One path with no forks. Learn the step and the wall.",
+    "hi": "एक ही रास्ता, कोई दोराहा नहीं। कदम और दीवार की आवाज़ पहचानना सीखिए।"
+  },
+  "level_2_name": {
+    "en": "Soft and harsh",
+    "hi": "नरम और कर्कश"
+  },
+  "level_2_desc": {
+    "en": "Two forks. Listen before you choose.",
+    "hi": "दो दोराहे। चुनने से पहले सुनिए।"
+  },
+  "level_3_name": {
+    "en": "Remember the way",
+    "hi": "रास्ता याद रखिए"
+  },
+  "level_3_desc": {
+    "en": "Hear the route as tones, then follow it from memory.",
+    "hi": "रास्ता धुनों में सुनिए, फिर याद के सहारे उस पर चलिए।"
+  },
+  "level_4_name": {
+    "en": "Parisha's maze",
+    "hi": "परिशा की भूलभुलैया"
+  },
+  "level_4_desc": {
+    "en": "Her hand-drawn maze, 10 by 10. Three forks from memory, then four listens.",
+    "hi": "उनकी हाथ से बनाई भूलभुलैया, 10 बाय 10 खानों की। पहले तीन दोराहे याद के सहारे, फिर चार बार सुन सकते हैं।"
+  },
+  "level_play": {
+    "en": "Play level {n}",
+    "hi": "लेवल {n} खेलिए"
+  },
+  "sounds_heading": {
+    "en": "The sounds",
+    "hi": "आवाज़ें"
+  },
+  "sounds_intro": {
+    "en": "Each sound has one meaning, and it keeps that meaning in every level.",
+    "hi": "हर आवाज़ का एक ही मतलब है, और हर लेवल में वही मतलब रहता है।"
+  },
+  "sound_play": {
+    "en": "Play",
+    "hi": "सुनिए"
+  },
+  "sound_step_name": {
+    "en": "Step",
+    "hi": "कदम"
+  },
+  "sound_step_meaning": {
+    "en": "You moved one square.",
+    "hi": "आप एक खाना चले।"
+  },
+  "sound_wall_name": {
+    "en": "Wall",
+    "hi": "दीवार"
+  },
+  "sound_wall_meaning": {
+    "en": "There's a wall that way. You didn't move.",
+    "hi": "उस तरफ़ दीवार है। आप आगे नहीं बढ़े।"
+  },
+  "sound_fork_name": {
+    "en": "Fork",
+    "hi": "दोराहा"
+  },
+  "sound_fork_meaning": {
+    "en": "More than one way is open here.",
+    "hi": "यहाँ से एक से ज़्यादा रास्ते खुले हैं।"
+  },
+  "sound_soft_name": {
+    "en": "Soft",
+    "hi": "नरम"
+  },
+  "sound_soft_meaning": {
+    "en": "Listening down this path: it leads out.",
+    "hi": "किसी रास्ते की आवाज़ सुनने पर यह आए, तो वह रास्ता बाहर ले जाता है।"
+  },
+  "sound_harsh_name": {
+    "en": "Harsh",
+    "hi": "कर्कश"
+  },
+  "sound_harsh_meaning": {
+    "en": "Listening down this path: it doesn't lead out.",
+    "hi": "किसी रास्ते की आवाज़ सुनने पर यह आए, तो वह रास्ता बाहर नहीं ले जाता।"
+  },
+  "sound_exit_name": {
+    "en": "Way out",
+    "hi": "बाहर का रास्ता"
+  },
+  "sound_exit_meaning": {
+    "en": "You've reached the exit.",
+    "hi": "आपको बाहर का रास्ता मिल गया।"
+  },
+  "sound_up_name": {
+    "en": "Up",
+    "hi": "ऊपर"
+  },
+  "sound_up_meaning": {
+    "en": "Route tone: high.",
+    "hi": "रास्ते की धुन: ऊँचा सुर।"
+  },
+  "sound_down_name": {
+    "en": "Down",
+    "hi": "नीचे"
+  },
+  "sound_down_meaning": {
+    "en": "Route tone: low.",
+    "hi": "रास्ते की धुन: नीचा सुर।"
+  },
+  "sound_left_name": {
+    "en": "Left",
+    "hi": "बाएँ"
+  },
+  "sound_left_meaning": {
+    "en": "Route tone: two short notes, from the left.",
+    "hi": "रास्ते की धुन: बाईं ओर से दो छोटे सुर।"
+  },
+  "sound_right_name": {
+    "en": "Right",
+    "hi": "दाएँ"
+  },
+  "sound_right_meaning": {
+    "en": "Route tone: one long note, from the right.",
+    "hi": "रास्ते की धुन: दाईं ओर से एक लंबा सुर।"
+  },
+  "sound_empty_name": {
+    "en": "No listens",
+    "hi": "सुनने के मौके ख़त्म"
+  },
+  "sound_empty_meaning": {
+    "en": "You've used all your listens for this level.",
+    "hi": "इस लेवल में आप सुनने के सारे मौके इस्तेमाल कर चुके हैं।"
+  },
+  "sound_check": {
+    "en": "Check left and right",
+    "hi": "बाएँ-दाएँ की जाँच कीजिए"
+  },
+  "sound_check_left": {
+    "en": "This step should come from your left.",
+    "hi": "यह कदम आपको बाईं ओर से सुनाई देना चाहिए।"
+  },
+  "sound_check_right": {
+    "en": "This step should come from your right.",
+    "hi": "यह कदम आपको दाईं ओर से सुनाई देना चाहिए।"
+  },
+  "status_level": {
+    "en": "Level {n}",
+    "hi": "लेवल {n}"
+  },
+  "status_listens": {
+    "en": "Listens left: {n}",
+    "hi": "सुनने के बचे मौके: {n}"
+  },
+  "status_steps": {
+    "en": "Steps: {n}",
+    "hi": "कदम: {n}"
+  },
+  "status_hint": {
+    "en": "H for help. Esc to pause.",
+    "hi": "मदद के लिए H, खेल रोकने के लिए Esc।"
+  },
+  "status_skip": {
+    "en": "Enter skips the introduction.",
+    "hi": "परिचय छोड़ने के लिए Enter दबाइए।"
+  },
+  "paper_note": {
+    "en": "The maze is hidden while you play. You'll see it when you get out.",
+    "hi": "खेलते समय भूलभुलैया छिपी रहती है। बाहर निकलने पर आप उसे देख पाएँगे।"
+  },
+  "pause_heading": {
+    "en": "Paused",
+    "hi": "खेल रुका है"
+  },
+  "resume": {
+    "en": "Resume",
+    "hi": "खेल जारी रखिए"
+  },
+  "restart": {
+    "en": "Restart this level",
+    "hi": "यह लेवल फिर से शुरू कीजिए"
+  },
+  "skip_level": {
+    "en": "Skip to the next level",
+    "hi": "अगले लेवल पर जाइए"
+  },
+  "to_levels": {
+    "en": "Back to the level list",
+    "hi": "लेवल की सूची पर लौटिए"
+  },
+  "volume_sounds": {
+    "en": "Sound volume",
+    "hi": "खेल की आवाज़ों का वॉल्यूम"
+  },
+  "volume_voice": {
+    "en": "Voice volume",
+    "hi": "बोलने वाली आवाज़ का वॉल्यूम"
+  },
+  "mono": {
+    "en": "Mono: same sound in both ears",
+    "hi": "मोनो: दोनों कानों में एक जैसी आवाज़"
+  },
+  "result_heading": {
+    "en": "You're out of level {n}",
+    "hi": "आप लेवल {n} की भूलभुलैया से बाहर निकल आए"
+  },
+  "stat_steps": {
+    "en": "Steps taken",
+    "hi": "कितने कदम चले"
+  },
+  "stat_shortest": {
+    "en": "Shortest route",
+    "hi": "सबसे छोटा रास्ता"
+  },
+  "stat_listens": {
+    "en": "Listens used",
+    "hi": "सुनने के कितने मौके इस्तेमाल किए"
+  },
+  "stat_replays": {
+    "en": "Route replays",
+    "hi": "रास्ता कितनी बार दोबारा सुना"
+  },
+  "stat_walls": {
+    "en": "Walls touched",
+    "hi": "कितनी बार दीवार से टकराए"
+  },
+  "stat_time": {
+    "en": "Time",
+    "hi": "समय"
+  },
+  "score_label": {
+    "en": "Score",
+    "hi": "स्कोर"
+  },
+  "score_rule": {
+    "en": "Out of 100. You lose 1 point for each step beyond the shortest route (40 at most), 4 for each listen and 2 for each route replay. Touching walls costs nothing.",
+    "hi": "100 में से। सबसे छोटे रास्ते से ज़्यादा हर कदम पर 1 अंक कटता है (ज़्यादा से ज़्यादा 40), सुनने का हर मौका इस्तेमाल करने पर 4, और हर बार रास्ता दोबारा सुनने पर 2। दीवार से टकराने पर कोई अंक नहीं कटता।"
+  },
+  "reveal_caption": {
+    "en": "The maze you just walked. Green dots mark your steps on the shortest route, and red crosses mark your steps off it.",
+    "hi": "वह भूलभुलैया जिससे आप अभी गुज़रे। हरे बिंदु सबसे छोटे रास्ते पर पड़े आपके कदम दिखाते हैं, और लाल क्रॉस उस रास्ते से हटकर पड़े कदम।"
+  },
+  "reveal_sketch_caption": {
+    "en": "Parisha's drawing of the same maze, with her red and green dots.",
+    "hi": "इसी भूलभुलैया का परिशा का बनाया चित्र, उनके लाल और हरे बिंदुओं के साथ।"
+  },
+  "next_level": {
+    "en": "Next level",
+    "hi": "अगला लेवल"
+  },
+  "play_again": {
+    "en": "Play this level again",
+    "hi": "यह लेवल फिर से खेलिए"
+  },
+  "all_done": {
+    "en": "That was the last level.",
+    "hi": "यह आख़िरी लेवल था।"
+  },
+  "load_error": {
+    "en": "The voice didn't load, so instructions will appear as text. The game sounds still work.",
+    "hi": "बोलने वाली आवाज़ लोड नहीं हुई, इसलिए निर्देश लिखकर दिखेंगे। खेल की आवाज़ें फिर भी काम करती हैं।"
+  },
+  "retry": {
+    "en": "Try loading the voice again",
+    "hi": "बोलने वाली आवाज़ फिर से लोड कीजिए"
+  },
+  "audio_blocked": {
+    "en": "Turn the sound back on",
+    "hi": "आवाज़ फिर से चालू कीजिए"
+  },
+  "minutes_seconds": {
+    "en": "{m} min {s} s",
+    "hi": "{m} मिनट {s} सेकंड"
+  },
+  "seconds": {
+    "en": "{s} s",
+    "hi": "{s} सेकंड"
+  }
+}
